@@ -10,9 +10,10 @@ The source code is available in the [src](src) directory.
 
 ## Clone & Install Dependencies
 
+Download or clone this repository.
+
 ```bash
-$ git clone --recurse-submodule https://github.com/visidroid/visidroid
-$ cd src/visidroid/droidbot
+$ cd src/testflow/droidbot
 $ pip install -e . # Install droidbot
 ```
 
