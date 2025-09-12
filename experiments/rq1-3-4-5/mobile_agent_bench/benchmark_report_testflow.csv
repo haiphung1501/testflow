@@ -1,0 +1,425 @@
+app,task_name,prompt,success,agent_steps,min_steps,max_steps,actions,test_gen_success,,
+calculator,calculator_add,Calculate the result of '3 + 5',TRUE,4,4,8,"Touch on a button that has text ""3""
+Touch on a button that has text ""+""
+Touch on a button that has text ""5""
+Touch on a button that has text ""=""",1,,64
+calculator,calculator_convert_length,Use Unit converter function to calculate how many kilometers 1mile is equal to,TRUE,7,6,12,"Touch on a button that has content_desc ""Unit converter""
+Touch on a button that has text ""Length""
+Touch on a button that has text ""Kilometer, 0, km""
+Touch on a button that has text ""Mile (mi)""
+Touch on a button that has text ""1""
+Touch on a button that has text ""Meter, 1,609.344, m""
+Touch on a button that has text ""Kilometer (km)""",1,,36
+calculator,calculator_cube,Calculate the result of '3 ^ 3',TRUE,4,4,8,"Touch on a button that has text ""3""
+Touch on a button that has text ""^""
+Touch on a button that has text ""3""
+Touch on a button that has text ""=""",0,,100
+calculator,calculator_divide,Calculate the result of '12 ÷ 3',TRUE,5,5,10,"Touch on a button that has text ""1""
+Touch on a button that has text ""2""
+Touch on a button that has text ""÷""
+Touch on a button that has text ""3""
+Touch on a button that has text ""=""",1,,
+calculator,calculator_minus,Calculate the result of '12 - 4',TRUE,5,5,10,"Touch on a button that has text ""1""
+Touch on a button that has text ""2""
+Touch on a button that has text ""-""
+Touch on a button that has text ""4""
+Touch on a button that has text ""=""",1,,
+calculator,calculator_mixed,Calculate the result of '18+(24×3)-(9÷3)',FALSE,11,17,34,"Touch on a button that has text ""1""
+Touch on a button that has text ""8""
+Touch on a button that has text ""+""
+Touch on a button that has text ""2""
+Touch on a button that has text ""4""
+Touch on a button that has text ""×""
+Touch on a button that has text ""C""
+Long touch on a button that has text ""C""
+Touch on a button that has text ""1""
+Touch on a button that has text ""8""
+Touch on a button that has text ""+""",0,special char,
+calculator,calculator_multiply,Calculate the result of '12*4',TRUE,5,5,10,"Touch on a button that has text ""1""
+Touch on a button that has text ""2""
+Touch on a button that has text ""×""
+Touch on a button that has text ""4""
+Touch on a button that has text ""=""",0,,
+calculator,calculator_point,Calculate the result of '19.7 - 81.3',FALSE,11,10,20,"Touch on a button that has text ""1""
+Touch on a button that has text ""9""
+Touch on a button that has text "".""
+Touch on a button that has text ""7""
+Touch on a button that has text ""-""
+Touch on a button that has text ""8""
+Touch on a button that has text ""1""
+Touch on a button that has text ""3""
+Touch on a button that has text ""C""
+Touch on a button that has text "".""
+Touch on a button that has text ""C""",0,,
+calculator,calculator_recalculate,"Calculate the result of '12 × 5'. However, during the input process, the number '4' was mistakenly entered instead of '5'. Correct this by first enter 'C' to delete '4' and re-entering '5' and then perform the calculation",TRUE,3,3,6,"Touch on a button that has text ""C""
+Touch on a button that has text ""5""
+Touch on a button that has text ""=""",1,,
+calculator,calculator_square,Calculate the result of 'sqrt(16) + 3',FALSE,13,6,12,"Touch on a button that has text ""√""
+Touch on a button that has text ""+""
+Touch on a button that has text ""=""
+Touch on a button that has text ""=""
+Touch on a button that has text ""C""
+Touch on a button that has text ""√""
+Touch on a button that has text ""3""
+Touch on a button that has text ""+""
+Touch on a button that has text ""C""
+Touch on a button that has text ""√""
+Touch on a button that has text ""3""
+Touch on a button that has text ""C""
+Touch on a button that has text ""√""",0,sspecial char,
+calendar,calendar_create_and_search,Create a new event 'laundry' and then search for it,FALSE,5,6,12,"Touch on a button that has content_desc ""New Event""
+Touch on a button that has text ""Event""
+Fill a focused textfield that has text ""Title"" with ""laundry""
+Touch on a button that has content_desc ""Save""
+Touch on a button that has content_desc ""Search""",0,,
+calendar,calendar_daily_view,switch to daily view,TRUE,2,2,4,"Touch on a button that has content_desc ""Change view""
+Touch on a button that has text ""Daily view""",1,,
+calendar,calendar_delete_tasks,"Show events in simple event list, delete the laundry and meeting events.",TRUE,8,6,14,"Touch on a button that has content_desc ""Change view""
+Touch on a button that has text ""Simple event list""
+Long touch on a button that has text ""Laundry, 11:00 PM""
+Touch on a button that has content_desc ""Delete""
+Touch on a button that has text ""Yes""
+Long touch on a button that has text ""Meeting, 11:00 PM""
+Touch on a button that has content_desc ""Delete""
+Touch on a button that has text ""Yes""",0,,
+calendar,calendar_laundry,Create a new event 'laundry',TRUE,4,4,8,"Touch on a button that has content_desc ""New Event""
+Touch on a button that has text ""Event""
+Fill a focused textfield that has text ""Title"" with ""laundry""
+Touch on a button that has content_desc ""Save""",1,,
+calendar,calendar_new_task,"Create a new task, named 'laundry', with the description of 'wash all my clothes'. Mark it as all-day.",TRUE,6,6,14,"Touch on a button that has content_desc ""New Event""
+Touch on a button that has text ""Task""
+Fill a focused textfield that has text ""Title"" with ""laundry""
+Fill a textfield that has text ""Description"" with ""wash all my clothes""
+Touch on a checkbox that has text ""All-day""
+Touch on a button that has content_desc ""Save""",1,,
+calendar,calendar_next_month,show events of next month,FALSE,1,1,2,"Touch on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/top_right_arrow""",1,,
+calendar,calendar_open_about,open about page,TRUE,2,2,4,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""About""",1,,
+calendar,calendar_search,search event 'laundry',TRUE,2,2,4,"Touch on a button that has content_desc ""Search""
+Fill a focused textfield that has text ""Search"" with ""laundry""",1,,
+calendar,calendar_snooze_time,change snooze time to 1 minute,FALSE,9,4,8,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Customize notifications""
+Touch on a button that has text ""Advanced, Allow notification dot""
+Touch on a button that has content_desc ""Back""
+Touch on a button that has text ""Customize notifications""
+Touch on a button that has content_desc ""Back""
+Touch on a button that has text ""Audio stream used by reminders, Notification""
+Press ""BACK"" button to navigate back
+Scroll down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""",1,,
+calendar,calendar_start_week,go to settings and make weeks start on Monday,TRUE,3,3,6,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Start week on, Sunday""
+Touch on a button that has text ""Monday""",1,,
+contacts,contacts_about,open About View,TRUE,2,2,4,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""About""",1,,
+contacts,contacts_create,"Create a new contact, his First Name is Yuzai, and his Phone Number is 123456789",TRUE,4,6,12,"Touch on a button that has content_desc ""Create new contact""
+Fill a textfield that has text ""First name"" with ""Yuzai""
+Fill a textfield that has text ""Number"" with ""123456789""
+Touch on a button that has content_desc ""Save""",1,,
+contacts,contacts_delete,Delete contact Yuzai,TRUE,4,3,6,"Long touch on a button that has text ""Yuzai""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Delete""
+Touch on a button that has text ""Yes""",1,,
+contacts,contacts_favorite,Set the contact Yuzai to Favorite,TRUE,3,2,4,"Touch on a button that has content_desc ""Search""
+Touch on a button that has text ""Yuzai""
+Touch on a button that has content_desc ""Toggle favorite""",1,,
+contacts,contacts_filter,"Change phone filter, which means don't show phone storage in contacts view",TRUE,3,3,6,"Touch on a button that has content_desc ""Filter""
+Touch on a checked checkbox that has text ""Phone storage (not visible by other apps) (1)""
+Touch on a button that has text ""OK""",1,,
+contacts,contacts_hide_email,Set not show contact's Email in the contact profile screen,FALSE,5,5,10,"Touch on a button that has content_desc ""Edit contact""
+Fill a textfield that has text ""yuzai@gmail.com"" with """"
+Fill a focused textfield that has text ""yuzai@gmail.com"" with """"
+Touch on a button that has content_desc ""Save""
+Long touch on a button that has text ""yuzai@gmail.com, Home""",1,,
+contacts,contacts_modify,Change the contact Yuzai's number to 987654321 and save it,TRUE,4,4,8,"Touch on a button that has text ""Yuzai""
+Touch on a button that has content_desc ""Edit contact""
+Fill a textfield that has text ""123456789"" with ""987654321""
+Touch on a button that has content_desc ""Save""",1,,
+contacts,contacts_remove_dialog,"Remove the dialog button, and then return to the main view",FALSE,5,4,8,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""
+Touch on a checkbox that has text ""Show a call confirmation dialog before initiating [...]""
+Touch on a checked checkbox that has text ""Show a call confirmation dialog before initiating [...]""
+Touch on a button that has content_desc ""Back""",1,,
+contacts,contacts_search,Search contact Yuzai,FALSE,1,2,4,"Touch on a textfield that has text ""Search""",1,,
+contacts,contacts_sort,"Sort contacts by Data created time, Descending",TRUE,4,5,10,"Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Date created""
+Touch on a button that has text ""Descending""
+Touch on a button that has text ""OK""",1,,
+filemanager,filemanager_check_file_properties,open the folder 'Downloads' and check the properties of the file 'testfile.txt',TRUE,3,2,4,"Touch on a button that has text ""> Download""
+Long touch on a button that has text ""Testfile.txt, 0 B, 06.08.2025, 11:10 PM""
+Touch on a button that has content_desc ""Properties""",0,precondition,
+filemanager,filemanager_check_storage,check the storage page,TRUE,1,1,2,"Touch on a button that has text ""Storage""",0,precondition,
+filemanager,filemanager_create_new_file,Create a new file named 'testfile.txt' in the 'Downloads' folder,TRUE,6,5,10,"Touch on a button that has text ""Download, 0 items""
+Touch on a button that has text ""> Download""
+Touch on a button that has resource_id ""com.simplemobiletools.filemanager.pro:id/items_fab""
+Touch on a button that has text ""File""
+Fill a focused textfield that has text ""Title"" with ""testfile.txt""
+Touch on a button that has text ""OK""",0,,
+filemanager,filemanager_delete_file,Delete file named 'testfile.txt' in the 'Downloads' folder,TRUE,3,3,6,"Long touch on a button that has text ""Testfile.txt, 0 B, 06.08.2025, 11:15 PM""
+Touch on a button that has content_desc ""Delete""
+Touch on a button that has text ""Yes""",0,,
+filemanager,filemanager_delete_txt,Delete the txt file in Download folder,TRUE,4,3,6,"Touch on a button that has text ""> Download""
+Long touch on a button that has text ""random.txt, 0 B, 06.08.2025, 11:24 PM""
+Touch on a button that has content_desc ""Delete""
+Touch on a button that has text ""Yes""",0,,
+filemanager,filemanager_delete_videos,Delete all videos in Download folder,TRUE,6,9,18,"Touch on a button that has text ""> Download""
+Long touch on a button that has text ""corl.avi, 0 B, 06.08.2025, 11:21 PM""
+Long touch on a button that has text ""cvpr.mov, 0 B, 06.08.2025, 11:21 PM""
+Long touch on a button that has text ""icml.mp4, 0 B, 06.08.2025, 11:20 PM""
+Touch on a button that has content_desc ""Delete""
+Touch on a button that has text ""Yes""",0,,
+filemanager,filemanager_hide_folder,Hide the folder named 'hidden' and make sure File Manager Stop showing hidden media,TRUE,5,3,6,"Long touch on a button that has text ""hidden, 0 items""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Hide""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Stop showing hidden media""",1,,
+filemanager,filemanager_rename_file,open the folder 'Downloads' and rename the file 'Testfile.txt' to 'testfile1.txt',TRUE,5,4,8,"Touch on a button that has text ""> Download""
+Long touch on a button that has text ""Testfile.txt, 0 B, 06.08.2025, 11:08 PM""
+Touch on a button that has content_desc ""Rename""
+Fill a focused textfield that has text ""Testfile"" with ""testfile1""
+Touch on a button that has text ""OK""",0,,
+filemanager,filemanager_search_file,Search a file named 'testfile.txt',FALSE,1,2,4,"Touch on a button that has content_desc ""Search""",1,,
+filemanager,filemanager_sort_folder_by_size_desc,"In the main page, sort the folder by size in descending order",TRUE,4,4,8,"Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Size""
+Touch on a button that has text ""Descending""
+Touch on a button that has text ""OK""",1,,
+gallery,gallery_filter_by_images_and_videos,filter media in the gallery and only show images and videos,TRUE,6,6,12,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Filter media""
+Touch on a checked checkbox that has text ""GIFs""
+Touch on a checked checkbox that has text ""RAW images""
+Touch on a checked checkbox that has text ""SVGs""
+Touch on a button that has text ""OK""",1,,
+gallery,gallery_group_by_file_type,"Go to the downloads folder, group the images by file type",FALSE,11,5,10,"Scroll down on a scrollable area that has text ""Search folders, Internal, 4[...and more]""
+Scroll down on a scrollable area that has text ""Internal, 4, Screenshots[...and more]""
+Scroll down on a scrollable area that has text ""Internal, 4, Screenshots[...and more]""
+Scroll down on a scrollable area that has text ""Internal, 4, Screenshots[...and more]""
+Scroll down on a scrollable area that has text ""Internal, 4, Screenshots[...and more]""
+Scroll down on a scrollable area that has text ""Internal, 4, Screenshots[...and more]""
+Touch on a button that has text ""Internal, 4""
+Touch on a textfield that has text ""Search in Internal""
+Fill a focused textfield that has text ""Search in Internal"" with ""downloads""
+Press ""BACK"" button to navigate back
+Press ""BACK"" button to navigate back",0,no actions execute,
+gallery,gallery_list_view_type,Change the view type to list view,TRUE,4,4,8,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Change view type""
+Touch on a button that has text ""List""
+Touch on a button that has text ""OK""",1,,
+gallery,gallery_play_videos_automatically,Go to Gallery settings and enable play videos automatically,TRUE,3,4,8,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""
+Touch on a checkbox that has text ""Play videos automatically""",1,,
+gallery,gallery_remember_playback_position,Enable remember the last video playback position in settings,FALSE,3,4,8,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""
+Touch on a checkbox that has text ""Remember last video playback position""",1,,
+gallery,gallery_set_favorite,Go to Downloads Folder and set the first image as favorite,FALSE,7,3,6,"Touch on a button that has resource_id ""com.simplemobiletools.gallery.pro:id/top_toolbar_search_icon""
+Fill a focused textfield that has text ""Search folders"" with ""Downloads""
+Touch on a button that has text ""Switch to file search across all visible folders""
+Press ""BACK"" button to navigate back
+Press ""BACK"" button to navigate back
+Scroll down on a scrollable area that has text ""Search folders, Internal, 4[...and more]""
+Scroll down on a scrollable area that has text ""Internal, 4, Screenshots[...and more]""",1,,
+gallery,gallery_set_wallpaper,Go to Downloads Folder and set the first image as Home screen wallpaper,TRUE,6,6,12,"Touch on a button that has text ""Download, 1""
+Touch on a button that has resource_id ""com.simplemobiletools.gallery.pro:id/media_item_holder""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Set as""
+Touch on a button that has text ""Gallery, Wallpaper""
+Touch on a button that has text ""SET WALLPAPER""",0,,
+gallery,gallery_show_hidden_items,show hidden items in the gallery in settings,TRUE,3,3,6,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""
+Touch on a checkbox that has text ""Show hidden items""",1,,
+gallery,gallery_sort_by_size_asc,sort the gallery by size ascendingly,TRUE,5,4,8,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Sort by""
+Touch on a button that has text ""Size""
+Touch on a button that has text ""Ascending""
+Touch on a button that has text ""OK""",1,,
+gallery,gallery_use_24_hour_time_format,Change the date and time format to 24-hour format in gallery settings,TRUE,5,5,10,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""
+Touch on a button that has text ""Change date and time format""
+Touch on a checkbox that has text ""Use 24-hour time format""
+Touch on a button that has text ""OK""",0,,
+launcher,launcher_add_apps,Add Chrome and Camera to launcher,TRUE,4,4,8,"Touch on a button that has text ""Manage visible app icons""
+Touch on a checkbox that has text ""Camera""
+Touch on a checkbox that has text ""Chrome""
+Touch on a button that has text ""OK""",1,,
+launcher,launcher_check_contributor,Check who is the contributor of the app,TRUE,2,3,6,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""About""",1,,
+launcher,launcher_hide_app_name,Hide app name in Launcher,TRUE,1,1,2,"Touch on a button that has content_desc ""Toggle app name visibility""",1,,
+launcher,launcher_open_about_FAQ,Open About page and go Frequently Asked Questions,TRUE,3,3,6,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""About""
+Touch on a button that has text ""Frequently asked questions""",1,,
+launcher,launcher_remove_app,Remove Chrome from Launcher,TRUE,3,3,6,"Long touch on a button that has text ""Chrome""
+Touch on a button that has content_desc ""Remove""
+Touch on a button that has text ""OK""",0,,
+launcher,launcher_rename_app,Rename Chrome in Launcher to MyChrome,TRUE,4,5,10,"Long touch on a button that has text ""Chrome""
+Touch on a button that has content_desc ""Rename""
+Fill a focused textfield that has text ""Chrome"" with ""MyChrome""
+Touch on a button that has text ""OK""",0,,
+launcher,launcher_search_app,Search for Chrome in Launcher,TRUE,2,2,4,"Touch on a button that has resource_id ""com.simplemobiletools.applauncher:id/top_toolbar_search_icon""
+Touch on a button that has text ""Chrome""",0,,
+launcher,launcher_setting_close_app_when_launching,Change Setting Close this app at launching a different one to false,TRUE,3,3,6,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""
+Touch on a checked checkbox that has text ""Close this app at launching a different one""",1,,
+launcher,launcher_sort_by_custom,Sort apps by custom,TRUE,3,3,6,"Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Custom""
+Touch on a button that has text ""OK""",1,,
+launcher,launcher_sort_by_title_desc,Sort apps by title descending,TRUE,3,3,6,"Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Descending""
+Touch on a button that has text ""OK""",1,,
+messenger,messager_add_block_numbers,Add a number '123456789' to block list,TRUE,5,5,10,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Manage blocked numbers""
+Touch on a button that has text ""Add a blocked number""
+Fill a focused textfield that has text ""Number, Enter a number or a pattern (e.g. *12345*, +1*8888[...]"" with ""123456789""
+Touch on a button that has text ""OK""",1,,
+messenger,messager_change_font_size,Change the Font size to 'Large' in the settings interface,TRUE,3,3,6,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Font size, Medium""
+Touch on a button that has text ""Large""",1,,
+messenger,messager_check_message_properties,"open the conversation with contact number '123456789', and check for a random message's properties ",FALSE,2,4,8,"Touch on a button that has text ""123456789, i luv u, 01:06 PM""
+Long touch on a button that has text ""i luv u""",0,precondition,
+messenger,messager_create_conversation_and_check_message_properties,"start a conversation with number '123456789', send a message 'i luv u', and check for message properties ",FALSE,5,8,16,"Touch on a button that has text ""Start a conversation""
+Fill a focused textfield that has text ""Add Contact or Number…"" with ""123456789""
+Touch on a button that has resource_id ""com.simplemobiletools.smsmessenger:id/new_conversation_confirm""
+Fill a focused textfield that has text ""Type a message…"" with ""i luv u""
+Touch on a button that has text ""SMS""",0,cannot type I luv u,
+messenger,messager_create_conversation_and_search,"start a conversation with number '123456789', and send a message 'i luv u', back to the main page and search for the contact '123456789'",FALSE,8,8,16,"Touch on a button that has resource_id ""com.simplemobiletools.smsmessenger:id/conversations_fab""
+Fill a focused textfield that has text ""Add Contact or Number…"" with ""123456789""
+Touch on a button that has resource_id ""com.simplemobiletools.smsmessenger:id/new_conversation_confirm""
+Fill a focused textfield that has text ""Type a message…"" with ""i luv u""
+Touch on a button that has text ""SMS""
+Press ""BACK"" button to navigate back
+Press ""BACK"" button to navigate back
+Touch on a button that has content_desc ""Back""",1,,
+messenger,messager_make_conversation_archived,make the conversation with number '123456789' archived,TRUE,4,3,6,"Long touch on a button that has text ""123456789, i luv u, 01:22 PM""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Archive""
+Touch on a button that has text ""Yes""",0,cannot type I luv u,
+messenger,messager_search_contacts,search for the contact '123456789' at top search bar,FALSE,1,2,4,"Touch on a button that has content_desc ""Search""",1,,
+messenger,messager_search_message,search message 'i luv u' at the top search bar,FALSE,1,2,4,"Touch on a button that has content_desc ""Search""",1,,
+messenger,messager_show_archived_messages,show me the archived conversations,FALSE,1,2,4,"Touch on a button that has content_desc ""More options""",1,,
+messenger,messager_start_a_conversation,"start a conversation with number '123456789', and send a message 'i luv u'",TRUE,5,8,16,"Touch on a button that has text ""Start a conversation""
+Fill a focused textfield that has text ""Add Contact or Number…"" with ""123456789""
+Touch on a button that has resource_id ""com.simplemobiletools.smsmessenger:id/new_conversation_confirm""
+Fill a focused textfield that has text ""Type a message…"" with ""i luv u""
+Touch on a button that has text ""SMS""",0,,
+musicplayer,music_player_album_sort_by_year,sort the album by 'year',TRUE,4,4,8,"Touch on a button that has text ""Albums""
+Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Year""
+Touch on a button that has text ""OK""",1,,
+musicplayer,music_player_config_equalizer,config equalizer to Heavy Metal,TRUE,3,3,6,"Touch on a button that has content_desc ""Equalizer""
+Touch on a button that has text ""Normal""
+Touch on a button that has text ""Heavy Metal""",1,,
+musicplayer,music_player_create_playlist,create a new playlist:test,TRUE,5,5,10,"Touch on a button that has text ""Playlists""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Create new playlist""
+Fill a focused textfield that has text ""Title"" with ""test""
+Touch on a button that has text ""OK""",1,,
+musicplayer,music_player_create_playlist_and_search,"create a new playlist: test, and search for it",FALSE,5,7,14,"Touch on a button that has text ""Playlists""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Create new playlist""
+Fill a focused textfield that has text ""Title"" with ""test""
+Touch on a button that has text ""OK""",1,,
+musicplayer,music_player_create_playlist_and_sort_desc,"create a new playlist: test, and sort all playlist by descending order",FALSE,11,7,14,"Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Descending""
+Touch on a button that has text ""OK""
+Touch on a button that has content_desc ""More options""
+Press ""BACK"" button to navigate back
+Touch on a button that has content_desc ""More options""
+Press ""BACK"" button to navigate back
+Touch on a button that has text ""All tracks, 0 Tracks""
+Touch on a button that has content_desc ""Back""
+Touch on a button that has content_desc ""More options""
+Press ""BACK"" button to navigate back",0,fail at sortclick sortby,
+musicplayer,music_player_open_faq,open faq page,TRUE,3,3,6,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""About""
+Touch on a button that has text ""Frequently asked questions""",0,fail last step,
+musicplayer,music_player_open_settings,open setting page,TRUE,2,2,4,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Settings""",1,,
+musicplayer,music_player_playlist_sort_desc,sort the playlist by 'desc',TRUE,3,3,6,"Touch on a button that has content_desc ""Sort by""
+Touch on a button that has text ""Descending""
+Touch on a button that has text ""OK""",1,,
+musicplayer,music_player_rescan_media,rescan media files,TRUE,2,2,4,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Rescan media""",1,,
+musicplayer,music_player_search_playlist,search playlist 'Test',FALSE,1,2,4,"Touch on a button that has text ""Test, 0 Tracks""",0,fail first step,
+note,note_add,add a new note named 'TODO List',TRUE,3,3,6,"Touch on a button that has content_desc ""Create a new note""
+Fill a focused textfield that has text ""Label"" with ""TODO List""
+Touch on a button that has text ""OK""",1,,
+note,note_delete,delete the 'to_do_list' and 'meeting' note,FALSE,9,4,8,"Touch on a button that has text ""to_do_list""
+Press ""BACK"" button to navigate back
+Touch on a button that has text ""Notes""
+Touch on a button that has text ""meeting""
+Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""Delete note""
+Touch on a button that has text ""Delete""
+Touch on a button that has text ""to_do_list""
+Touch on a button that has content_desc ""More options""",0,,
+note,note_item_checked,Check the item 'eggs' for shopping_list,TRUE,1,1,2,"Touch on a button that has text ""eggs""",0,,
+note,note_lock,use the pin '2580' to open the locked note 'password_list',TRUE,6,6,12,"Touch on a button that has text ""Show content""
+Touch on a button that has text ""2""
+Touch on a button that has text ""5""
+Touch on a button that has text ""8""
+Touch on a button that has text ""0""
+Touch on a button that has resource_id ""com.simplemobiletools.notes.pro:id/pin_ok""",1,,
+note,note_new_checklist,add a new Checklist named 'TODO List',TRUE,4,4,8,"Touch on a button that has content_desc ""Create a new note""
+Touch on a button that has text ""Checklist""
+Fill a focused textfield that has text ""Label"" with ""TODO List""
+Touch on a button that has text ""OK""",1,,
+note,note_new_checklist_items,create a checklist named 'Shopping list' and add an item named 'Milk',TRUE,7,7,14,"Touch on a button that has content_desc ""Create a new note""
+Touch on a button that has text ""Checklist""
+Fill a focused textfield that has text ""Label"" with ""Shopping list""
+Touch on a button that has text ""OK""
+Touch on a button that has text ""Add new checklist items""
+Fill a focused textfield that has resource_id ""com.simplemobiletools.notes.pro:id/title_edit_text"" with ""Milk""
+Touch on a button that has text ""OK""",0,,
+note,note_open,open the note 'meeting',TRUE,1,1,2,"Touch on a button that has text ""meeting""",0,no meeting,
+note,note_open_about,open about page,TRUE,2,2,4,"Touch on a button that has content_desc ""More options""
+Touch on a button that has text ""About""",1,,
+note,note_rename,rename the current note to 'finished_task',FALSE,1,5,10,"Fill a focused textfield that has text ""Undo"" with ""finished_task""",0,,
+note,note_search,search 'secret' in note 'Charles's secrets',FALSE,1,2,4,"Touch on a button that has content_desc ""Search""",1,,
+recorder,recorder_bit_rate,change bitrate to 32 kbps,TRUE,3,3,6,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Bitrate, 128 kbps""
+Touch on a button that has text ""32 kbps""",1,,
+recorder,recorder_delete,delete the last recorded audio,TRUE,5,5,10,"Touch on a button that has text ""Player""
+Touch on a button that has resource_id ""com.simplemobiletools.voicerecorder:id/overflow_menu_icon""
+Touch on a button that has text ""Delete""
+Touch on a button that has text ""Yes""
+Touch on a button that has text ""ALLOW""",0,failed overflow menu icon,
+recorder,recorder_delete_all,delete all recorded audio,FALSE,11,13,26,"Touch on a button that has text ""Player""
+Touch on a button that has resource_id ""com.simplemobiletools.voicerecorder:id/overflow_menu_icon""
+Touch on a button that has text ""Delete""
+Touch on a button that has text ""Yes""
+Touch on a button that has text ""ALLOW""
+Touch on a button that has resource_id ""com.simplemobiletools.voicerecorder:id/overflow_menu_icon""
+Press ""BACK"" button to navigate back
+Long touch on a button that has text ""2025_08_07_13_45_39.m4a, 00:02, 07.08.2025, 01:45 PM[...and more]""
+Long touch on a button that has text ""2025_08_07_13_45_36.m4a, 00:01, 07.08.2025, 01:45 PM[...and more]""
+Touch on a button that has content_desc ""Delete""
+Touch on a button that has text ""Yes""",0,,
+recorder,recorder_empty_trash,go to settings and empty the recycle bin,TRUE,3,3,6,"Touch on a button that has content_desc ""Settings""
+Scroll down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""
+Touch on a button that has text ""Empty the Recycle Bin, 0 B""",1,,
+recorder,recorder_extension,use mp3 as the format for new recordings,TRUE,3,3,6,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Extension, m4a""
+Touch on a button that has text ""mp3""",1,,
+recorder,recorder_recycle_bin,go to recycle bin page,TRUE,1,1,2,"Touch on a button that has text ""Recycle Bin""",1,,
+recorder,recorder_recycle_settings,"change settings, so that the deleted items will not go to recycle bin",TRUE,3,3,6,"Touch on a button that has content_desc ""Settings""
+Scroll down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""
+Touch on a checked checkbox that has text ""Move items into the Recycle Bin instead of deletin[...]""",1,,
+recorder,recorder_rename,rename the first audio to 'voice.m4a',TRUE,5,6,12,"Touch on a button that has text ""Player""
+Long touch on a button that has text ""2025_08_07_13_53_37.m4a, 00:02, 07.08.2025, 01:53 PM[...and more]""
+Touch on a button that has content_desc ""Rename""
+Fill a focused textfield that has text ""2025_08_07_13_53_37"" with ""voice.m4a""
+Touch on a button that has text ""OK""",0,no file,
+recorder,recorder_rename_all,"rename all audio to voice1.m4a, voice2.m4a, and so on",FALSE,11,13,26,"Touch on a button that has text ""Player""
+Long touch on a button that has text ""2025_08_07_14_04_07.m4a, 00:02, 07.08.2025, 02:04 PM[...and more]""
+Touch on a button that has content_desc ""Rename""
+Fill a focused textfield that has text ""2025_08_07_14_04_07"" with ""voice1.m4a""
+Touch on a button that has text ""OK""
+Long touch on a button that has text ""2025_08_07_14_04_05.m4a, 00:02, 07.08.2025, 02:04 PM[...and more]""
+Touch on a button that has content_desc ""Rename""
+Fill a focused textfield that has text ""2025_08_07_14_04_05"" with ""voice2.m4a""
+Touch on a button that has text ""OK""
+Long touch on a button that has text ""2025_08_07_14_04_03.m4a, 00:02, 07.08.2025, 02:04 PM[...and more]""
+Touch on a button that has content_desc ""Rename""",0,no file,
+recorder,recorder_theme,change app theme to dark red,FALSE,5,6,12,"Touch on a button that has content_desc ""Settings""
+Touch on a button that has text ""Customize colors""
+Touch on a button that has text ""Theme, Dark""
+Touch on a button that has text ""OK""
+Touch on a button that has text ""Dark red""
+Touch on a button that has text ""Save""",1,,

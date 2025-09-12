@@ -1,0 +1,99 @@
+{
+  "total_tasks": 100,
+  "successful_test_gen_tasks": 64,
+  "failed_test_gen_tasks": 36,
+  "no_value_tasks": 0,
+  "evaluation_analysis": {
+    "total_evaluated": 64,
+    "task_achieved": 53,
+    "task_completed": 52,
+    "exact_match": 52
+  },
+  "metrics": {
+    "exact_match_76": {
+      "count": 52,
+      "total": 76,
+      "percentage": 68.42,
+      "description": "Based on evaluation files: all actions correct AND end correctly"
+    },
+    "all_task_100": {
+      "count": 64,
+      "total": 100,
+      "percentage": 64.0,
+      "description": "Based on test_gen_success column: test script generated successfully"
+    },
+    "completion_task_77": {
+      "count": 52,
+      "total": 77,
+      "percentage": 67.53,
+      "description": "Based on evaluation files: last action correct AND end correctly"
+    },
+    "actual_total": {
+      "count": 64,
+      "total": 100,
+      "percentage": 64.0
+    }
+  },
+  "app_breakdown": [
+    {
+      "App": "calculator",
+      "Successful_Tasks": 5,
+      "Total_Tasks": 10,
+      "Success_Rate": 50.0
+    },
+    {
+      "App": "calendar",
+      "Successful_Tasks": 8,
+      "Total_Tasks": 10,
+      "Success_Rate": 80.0
+    },
+    {
+      "App": "contacts",
+      "Successful_Tasks": 10,
+      "Total_Tasks": 10,
+      "Success_Rate": 100.0
+    },
+    {
+      "App": "filemanager",
+      "Successful_Tasks": 3,
+      "Total_Tasks": 10,
+      "Success_Rate": 30.0
+    },
+    {
+      "App": "gallery",
+      "Successful_Tasks": 7,
+      "Total_Tasks": 10,
+      "Success_Rate": 70.0
+    },
+    {
+      "App": "launcher",
+      "Successful_Tasks": 7,
+      "Total_Tasks": 10,
+      "Success_Rate": 70.0
+    },
+    {
+      "App": "messenger",
+      "Successful_Tasks": 6,
+      "Total_Tasks": 10,
+      "Success_Rate": 60.0
+    },
+    {
+      "App": "musicplayer",
+      "Successful_Tasks": 7,
+      "Total_Tasks": 10,
+      "Success_Rate": 70.0
+    },
+    {
+      "App": "note",
+      "Successful_Tasks": 5,
+      "Total_Tasks": 10,
+      "Success_Rate": 50.0
+    },
+    {
+      "App": "recorder",
+      "Successful_Tasks": 6,
+      "Total_Tasks": 10,
+      "Success_Rate": 60.0
+    }
+  ]
+}

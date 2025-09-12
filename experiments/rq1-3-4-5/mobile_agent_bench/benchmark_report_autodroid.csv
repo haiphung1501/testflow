@@ -1,0 +1,584 @@
+app,task_name,prompt,success,agent_steps,min_steps,max_steps,actions
+calculator,calculator_add,Calculate the result of '\1',True,4,,,"Tap on the button representing '3'
+Tap on the '+' button to select the addition operation
+Tap on the button '5', followed by tapping on the equals button to complete the calculation.
+Press the equals button to compute the result"
+calculator,calculator_cube,Calculate the result of '\1',True,4,,,"Enter the number '3'
+Tap on the '^' button to select the operation of exponentiation
+Press the '3' button to complete the expression '3 ^ 3'.
+Tap on the equal button to calculate the result"
+calculator,calculator_divide,Calculate the result of '\1',True,5,,,"Input the number 1
+Input '2' to complete the entry of the first number '12'.
+Tap on the division button
+Tap on 3 to complete the division input
+Press the '=' button to calculate the result"
+calculator,calculator_length,Use Unit converter function to calculate how many kilometers 1mile is equal to,True,7,,,"Navigate to the Unit converter function
+Select the 'Length' option to choose the type of conversion.
+Enter the number 1 as the mile value to convert
+Select Kilometer to see the conversion from 1 mile to kilometers.
+Switch the input unit to 'Mile' to perform the conversion.
+Select the 'Meter' option to change the conversion to kilometers.
+Select Kilometer as the unit to convert to"
+calculator,calculator_minus,Calculate the result of '\1',True,5,,,"Enter the first digit of the calculation which is 1
+Enter the number '2' to complete the initial number '12'
+Tap on the subtraction button
+Tap the button for number 4 to complete the expression
+Tap on the '=' button to complete the calculation."
+calculator,calculator_mixed,Calculate the result of '\1',True,18,,,"Input the number 1
+Tap on '8' to complete the number '18'.
+Input addition operator
+Tap on the number 2 as part of entering '24'
+Input the remainder of the expression starting with '4'
+Continue entering the full expression by multiplying '24' by '3'
+Complete the multiplication by tapping '3'
+Perform the division operation '9÷3'
+Complete the '9÷3' operation and get the final result of the entire expression.
+Go back to the calculator interface to complete the expression
+Tap on the button to complete the division operation
+Input the numerator for the division to complete '9÷3'.
+Return to the calculator keypad to continue entering the mathematical expression.
+Complete the division operation by tapping 3, and then tap = to see the result.
+Press the subtraction button to complete the operation, then the equals button to get the final result.
+Complete division by tapping 3 to finish the expression.
+Tap on '=' to finalize the calculation and get the result
+Tap on = to compute the correct expression"
+calculator,calculator_multiply,Calculate the result of '\1',True,5,,,"Input the first digit of the first number
+Tap on the number '2' to complete inputting the first operand '12'.
+Tap on the multiply button to continue the sequence of the calculation.
+Tap on the number 4
+Press the equals button to compute the result."
+calculator,calculator_point,Calculate the result of '\1',False,27,,,"Input the number 19.7
+Continue entering the first number by tapping on '9'.
+Continue entering the number '9' as the next digit after '1' to complete '19.7'
+Clear the current input and start entering the correct number.
+Input '1'
+Enter '9' to complete the input '19', then add the decimal point.
+Input the number 19.7 using buttons.
+Clear the current input and start entering the correct calculation.
+Tap on 1 to start entering the first number
+Input the number 9 to begin entering '19.7'.
+Clear incorrect input, and enter the decimal number '19.7'
+Enter the first number 19.7
+Begin inputting the number '19.7'
+Input the number 9
+Enter the first digit of the number 19.7
+Input '19.7', tap '-', input '81.3', then tap '='
+Enter the first number for the calculation
+Tap the clear button to reset the input
+Tap on button '1' to enter the number '19.7'
+Enter 9
+Tap on the number 1 button to start entering the number 19.7
+Clear the incorrect input and enter the correct number '19.7'.
+Input the number 1
+Input the correct value of the first operand
+Tap on '1' to start entering the number '19.7'
+Input '19.7' into the calculator
+Return to the calculator interface to start the calculation task again."
+calculator,calculator_recalculate,step_file,False,71,,,"Delete the mistakenly entered number by tapping on 'C'
+Tap on '5' to input the correct number
+Tap the '×' button to select the multiplication operation
+Perform the calculation by tapping on the '=' button
+Enter the digits '1' and '2' to complete the number '12' and then perform the calculation.
+Tap the 'C' button to clear the current expression to allow for the correct input to begin.
+Enter the number '1' for the first digit in '12'.
+Tap on 'C' to clear the current incorrect expression '5×1'.
+Enter the number '2' to complete the first operand and perform the multiplication operation.
+Tap on 'C' to clear the current incorrect operation.
+Enter '2' to complete the number '12', followed by '=' for the calculation.
+Tap '=' to perform the calculation
+Enter the correct multiplier '1' to properly start the multiplication process again.
+Tap on 'C' to clear the current incorrect expression
+Tap on 'C' to clear the incorrect entry.
+Tap on 'C' to clear the current erroneous input, then input '5', followed by tap on '=' to complete the calculation.
+Clear the wrong intermediate result using the 'C' button, correctly input the number '5', and then tap '=' to perform the calculation.
+Clear current incorrect input to re-enter '5', and then perform the calculation.
+Clear the current entry to correct previous mistakes.
+Enter 'C' to clear the last incorrect input.
+Delete the incorrect number 2, enter the correct number 5, and perform the calculation
+Tap 'C' to clear the current input.
+Tap the 'C' button to clear the current incorrect input.
+Clear current input and enter '1'
+Clear the current incorrect expression
+Clear the existing incorrect calculation and re-enter the correct digits to perform the calculation
+Tap 'C' to clear the current incorrect input.
+Clear the current calculation by tapping 'C'
+Tap on 'C' to clear the incorrect second operand
+Tap on the multiply button to enter the correct operation, then tap '1', '2', and '=' to perform the calculation
+Tap on 'C' to clear the last incorrect entry
+Tap on 'C' to clear the input.
+Clear the current input and enter the correct sequence '1', '2', '×', '5', and then calculate.
+Tap on 'C' to clear the current input
+Clear the incorrect input by tapping 'C'
+Clear the current operation, input the correct number, and finalize the calculation.
+Tap on 'C' to clear the current incorrect input
+Clear the entered number, enter 5, and perform the calculation
+Clear the incorrect input and enter the multiplication operation from the start.
+Tap on 'C' to clear the display, then enter the number '1'.
+Clear the current input and re-enter the number '2'
+Tap 'C' to clear the incorrect equation.
+Clear the current input and enter '1'.
+Clear the current input, then enter '12', tap '×', enter '5', and tap '=' to get the result of '12 × 5'.
+Tap 'C' to clear the current incorrect input '5×2'
+Clear the current entry and input '5'
+Clear the current input
+Tap on the 'C' button to clear the erroneous input.
+Tap 'C' to clear the current expression
+Clear the current input by tapping 'C' to reset the display for new calculation
+Tap on the 'C' button to clear the current expression.
+Tap 'C' to clear the incorrect current input.
+Tap on 'C' to clear the current incorrect input '2'
+Tap on 'C' to clear the current input.
+Clear the current input by tapping on 'C'
+Clear the incorrect operation display using the 'C' button
+Clear the current expression and start entering '12 × 5'
+Tap on 'C' to clear the current erroneous input.
+Tap on the 'C' button to clear the input.
+Use 'C' to clear the current entry, enter '12', tap '×', enter '5', and tap '=' to perform the calculation.
+Clear the current input and re-enter the number '5' followed by the multiplication operation
+Tap the clear button to delete the current input.
+Clear the incorrect entry '5×2' by tapping on 'C'.
+Tap on 'C' to clear the incorrect input starting with '5×2'.
+Tap 'C' to clear the current incorrect calculation
+Tap the 'C' button to clear the current erroneous expression '5×2'
+Clear the current input to correct the expression.
+Tap on the 'C' button to clear current calculation.
+Clear the current input by tapping 'C', then enter '5', and perform the calculation.
+Tap the C button to clear the mistake
+Clear the input and enter the correct numbers"
+calculator,calculator_square,droidbot_env,,0,,,
+calendar,calendar_create_and_search,Create a new event '\1' and then search for it,True,5,,,"Tap on 'New Event' to begin creating a new event.
+Input the title of the event as 'laundry'
+Save the new event by tapping on the Save button
+Tap on the search button to initiate a search for the newly created event.
+Enter 'laundry' in the search input field"
+calendar,calendar_daily_view,switch to daily view,True,2,,,"Tap the 'Change view' button to look for the option to switch to daily view.
+Select the Daily view by tapping the corresponding checkbox."
+calendar,calendar_delete_tasks,"Show events in simple event list, delete the laundry and meeting events.",True,12,,,"Tap on the event containing 'laundry' and 'meeting' to open the options for deletion.
+Tap on the event to open its details and delete it
+Open the 'laundry' event details to proceed with deletion.
+Tap on the button showing 'August 16 (Sat) 12:00 PM laundry 03:00 PM meeting' to expand options for deleting events
+Initiate the action to delete the 'laundry' and 'meeting' events.
+Access the event details view where deletion options may be available
+Tap on the event to open it, then find and tap the delete option.
+Change the calendar view to a simpler event list
+Switch to Simple event list view
+Tap on the event '03:00 PM meeting' to delete it.
+Delete the 'meeting' event
+Confirm the deletion of the meeting event and then proceed to delete the laundry event."
+calendar,calendar_laundry,Create a new event '\1',True,3,,,"Tap the 'New Event' button to start creating a new event
+Input the event title 'laundry'
+Save the event to complete its creation"
+calendar,calendar_new_task,"Create a new task, named '\1', with the description of '\1'. Mark it as all-day.",True,5,,,"Tap on 'New Event' to start creating a new calendar event.
+Input the title for the new event
+Input the description 'wash all my clothes' for the task.
+Toggle the checkbox to mark the event as all-day
+Save the newly created event"
+calendar,calendar_next_month,show events of next month,False,18,,,"Tap to navigate to the next month
+Select the 'Monthly view' to change the calendar view.
+Navigate to next month
+Navigate to the next month to view events
+Tap on the current month button to navigate to the next month.
+Tap on the current month button to open the month selection to navigate to the next month.
+Tap on a button to navigate to the next month
+Tap on the button to navigate to the next month.
+Navigate to the next month
+Try to find a button or navigation option to proceed to the next month from 'August'.
+Tap to advance to the next month.
+Tap on the button to navigate to the next month, September.
+Tap on the button that allows shifting the calendar to the next month.
+Navigate to the next month, which is likely represented by another button or by repeatedly tapping the current month's button.
+Tap on the 'Go to today' button and then navigate to the next month.
+Attempt to navigate to the next month or provide a correct navigation option if one exists
+Tap on 'August' to try advancing to the next month.
+Tap on the part of the app that allows you to move forward to the next month to display its events."
+calendar,calendar_open_about,open about page,True,2,,,"Tap on 'More options' to access additional menu items where 'About' might be located
+Tap on the 'About' button to open the about page."
+calendar,calendar_search,search event '\1',True,2,,,"Tap the 'Search' button to initiate an event search.
+Input the event name 'laundry' into the search field"
+calendar,calendar_snooze_time,change snooze time to 1 minute,True,4,,,"Tap on 'More options' to explore settings or additional options related to snooze settings.
+Open Settings to configure snooze time
+Select the Snooze time option to modify the duration.
+Select the 1 minute snooze time option"
+calendar,calendar_start_week,go to settings and make weeks start on Monday,True,5,,,"Tap the 'More options' button to access further options potentially leading to settings.
+Tap on Settings to access configuration options
+Uncheck the 'Start week on Sunday' to set the week to start on Monday.
+Toggle or find the appropriate option to ensure weeks start on Monday in the app settings.
+Tap on the checkbox to turn 'Start week on Sunday' OFF so that the week starts on Monday."
+contacts,contacts_about,open About View,False,3,,,"Respond to the permission request to proceed further in the app
+Tap on the 'More options' button to find the About View.
+Tap on the 'About' button to open the About View."
+contacts,contacts_create,"Create a new contact, his First Name is Yuzai, and his Phone Number is 123456789",True,4,,,"Tap on 'Create new contact'
+Input the First Name
+Enter the phone number
+Tap the 'Save' button to finish creating the contact"
+contacts,contacts_delete,Delete contact Yuzai,True,3,,,"Select the contact Yuzai by tapping on it.
+Tap on the 'Delete' button to delete the contact Yuzai
+Confirm the contact deletion"
+contacts,contacts_favorite,Set the contact Yuzai to Favorite,True,2,,,"Tap on the contact named Yuzai to view contact details and find the option to add to Favorites.
+Tap the 'Toggle favorite' button to mark the contact as a favorite."
+contacts,contacts_filter,"Change phone filter, which means don_t show phone storage in contacts view",True,2,,,"Tap on the 'Filter' button to access options for managing how contacts are displayed.
+Uncheck the 'Phone storage' option to complete the task"
+contacts,contacts_hide_email,Set not show contact_s Email in the contact profile screen,False,7,,,"Tap on Yuzai to open the contact's profile
+Tap on Edit contact to modify contact details
+Clear or modify the 'Email' field to set it to not show.
+Clear the Email input field
+Save any changes in the edit screen, then look for options to adjust contact detail visibility.
+Go to the edit screen once again to look for email visibility settings
+Look for an option to hide or toggle the Email visibility"
+contacts,contacts_modify,Change the contact Yuzai_s number to 987654321 and save it,True,4,,,"Open Yuzai's contact details
+Tap on the 'Edit contact' button to begin editing Yuzai's contact information.
+Change the current phone number to 987654321
+Tap on the Save button to save the changes made to the contact."
+contacts,contacts_remove_dialog,"Remove the dialog button, and then return to the main view",True,2,,,"Go back to the main view of the app
+Check for any dialog or return to the main view by tapping the go back button if necessary."
+contacts,contacts_search,Search contact Yuzai,True,1,,,Enter 'Yuzai' in the search bar to find the contact.
+contacts,contacts_sort,"Sort contacts by Data created time, Descending",True,4,,,"Tap on the 'Sort by' button to access sorting options.
+Select 'Date created' and 'Descending'
+Change the sort order to 'Descending'
+Confirm the sorting options"
+filemanager,filemanager_check_file_properties,open the folder '\1' and check the properties of the file '\1',False,15,,,"Tap on the 'Download' button to open the Downloads folder.
+Open the properties of the file 'testfile.txt'
+Select an appropriate app to view the properties of 'testfile.txt'
+Go back to the previous screen to find the properties option for 'testfile.txt'.
+Tap on 'testfile.txt' to access its properties screen
+Go back to the file manager and find an option to view properties of 'testfile.txt'.
+Tap on 'testfile.txt' again to attempt to view its properties.
+Open the file 'testfile.txt' with an appropriate application to check its properties.
+Go back and access the properties of 'testfile.txt' without attempting to open it with an app.
+Tap on 'More options' and then select 'Properties' to view details of 'testfile.txt'.
+Access the submenu to find file properties.
+Navigate back to the file 'testfile.txt' in the 'Downloads' folder to access options for checking properties.
+Tap 'testfile.txt' to access more options or properties
+Go back to the file options to find and select 'Properties' for 'testfile.txt'.
+Tap on 'testfile.txt' and look for an option to view properties or details."
+filemanager,filemanager_check_storage,check the storage page,True,1,,,Tap the 'Storage' button to view the storage page.
+filemanager,filemanager_create_new_file,Create a new file named '\1' in the '\1' folder,False,3,,,"Navigate to and open the 'Download' folder
+Find an option to create a new file
+Look for an option to create a new file, such as 'New file' or 'Create file'."
+filemanager,filemanager_delete_file,Delete file named '\1' in the '\1' folder,False,36,,,"Navigate into the 'Downloads' folder.
+Navigate to the 'Downloads' folder
+Navigate to the Downloads folder to locate 'testfile.txt'.
+Navigate to the correct 'Downloads' folder if not there yet
+Navigate to the 'Download' folder to look for 'testfile.txt'.
+Tap on the file named 'testfile.txt' to select it and access more options for deletion.
+Go back to the previous screen to delete the file
+Select the file 'testfile.txt' to follow with the delete action.
+Go back to the previous screen to find the option to delete 'testfile.txt'
+Select the file 'testfile.txt' and choose the option to delete it.
+Go back to the 'Downloads' folder to find and tap on options to delete the file 'testfile.txt'.
+Select the file 'testfile.txt' to open the option to delete it.
+Locate the delete option for 'testfile.txt' and proceed to delete it.
+Tap on 'testfile.txt' to select it in preparation for deletion
+Go back to the 'Downloads' folder and find the delete option for the file.
+Navigate back to the file options and select 'Delete' to remove the file.
+Tap on 'testfile.txt' to select it for possible deletion options
+Navigate back to the Downloads folder, long press or select the file 'testfile.txt' to bring up delete options.
+Tap on 'testfile.txt' to select it for deletion or find a 'Delete' option.
+Go back and find the option to delete the file
+Select the file 'testfile.txt' to view delete options.
+Go back to the Downloads folder and find the delete option for 'testfile.txt'.
+Select the file 'testfile.txt' to see options for deletion.
+Go back to the previous menu to select the file for deletion
+Select the file 'testfile.txt' for deletion
+Navigate to a menu or option to delete the file 'testfile.txt'
+Tap on 'More options' to find the 'Delete' option for testfile.txt
+Explore more options to find the delete function
+Locate and delete 'testfile.txt' in the Downloads folder
+Go back to the File Manager main screen
+Access more options to delete the file
+Tap on 'More options' again and look for a 'Delete' option.
+Open the contextual menu for testfile.txt to delete the file
+Navigate back to the folder view and select 'More options' for deleting
+Open more options for 'testfile.txt' to find the delete option
+Select 'testfile.txt' for action"
+filemanager,filemanager_delete_txt,Delete the txt file in Download folder,False,13,,,"Navigate into the Download folder
+Select the txt file to prepare for deletion
+Dismiss the 'Open with' dialog and return to the previous screen to select the file for deletion.
+Tap on the txt file again to select it for deletion
+Go back to the previous UI where file management actions such as delete are available.
+Select the 'testfile.txt' file to delete it
+Go back to the file options and select the delete option for the file.
+Tap on the testfile.txt file to view options for deleting or managing it
+Go back to the file list and find the option to delete the file.
+Tap on the 'More options' button to see if a delete option is available.
+Look for an option to delete the selected file within the 'More options' or similar menu.
+Tap on the file to reveal options, and proceed to delete it through the options.
+Go back to the file options and select the delete option for the selected file."
+filemanager,filemanager_delete_videos,Delete all videos in Download folder,False,6,,,"Navigate to the Download folder
+Delete the video file 'icml.mp4' in the Download folder
+Go back to the previous screen to delete the video file
+Select the video file and choose the delete option
+Return to the file manager and find an option to delete the selected video files.
+Delete the file 'icml.mp4'."
+filemanager,filemanager_hide_folder,Hide the folder named '\1' and make sure File Manager Stop showing hidden media,True,4,,,"Tap on 'More options' to explore settings
+Navigate to settings within the File Manager to manage hidden file visibility.
+Uncheck 'Show hidden items' to stop showing hidden media in the File Manager.
+Navigate to the folder list, locate the 'hidden' folder, and hide it."
+filemanager,filemanager_rename_file,open the folder '\1' and rename the file '\1' to '\1',True,11,,,"Tap on the 'Download' folder to open it
+Select the file 'testfile.txt' to rename it.
+Go back to the previous UI to rename the file.
+Tap on the 'testfile.txt' to bring up options for renaming it.
+Select a suitable app to open the file editor if it supports renaming, or go back to the file manager to rename
+Select the File Editor to open the file for renaming
+Tap on 'More options' to find the rename option
+Go back to the file options and choose the rename option.
+Choose the option to save or rename the file to 'testfile1.txt'.
+Enter the new filename to rename the file
+Confirm the change of file name by saving it."
+filemanager,filemanager_search_file,Search a file named '\1',True,2,,,"Use the search function to search for the file named 'testfile.txt'.
+Tap on the file 'testfile.txt' to complete the search action by opening or selecting it."
+filemanager,filemanager_sort_folder_by_size_desc,"In the main page, sort the folder by size in descending order",True,4,,,"Tap on the 'Sort by' button to access sorting options.
+Select 'Size' to enable sorting by size.
+Select 'Descending' order to complete the sorting by size in descending order.
+Confirm the sorting settings by tapping on the 'OK' button."
+gallery,gallery_filter_by_images_and_videos,filter media in the gallery and only show images and videos,True,5,,,"Navigate to more options to find filtering options.
+Tap on the 'Filter media' button to proceed with filtering media.
+Uncheck media types other than Images and Videos
+Uncheck RAW images
+Uncheck the SVGs option"
+gallery,gallery_group_by_file_type,"Go to the downloads folder, group the images by file type",False,4,,,"Navigate to the 'Internal' storage to locate the downloads folder
+Navigate to the downloads folder
+Navigate to the Downloads folder
+Navigate to the correct folder and find the option to group images by file type."
+gallery,gallery_list_view_type,Change the view type to list view,True,3,,,"Tap the 'More options' button to look for view settings.
+Tap on the 'Change view type' button to proceed to change the view type.
+Select the 'List' option to change the view type."
+gallery,gallery_play_videos_automatically,Go to Gallery settings and enable play videos automatically,False,5,,,"Access more options to find the settings menu
+Navigate to the settings screen
+Enable the 'Play videos automatically' option in the video settings.
+Enable the 'Play videos automatically' option
+Tap to enable the 'Play videos automatically' checkbox"
+gallery,gallery_remember_playback_position,Enable remember the last video playback position in settings,True,3,,,"Tap on 'More options' to explore additional possibilities for accessing settings.
+Tap on 'Settings' to access relevant options for video playback.
+Enable the 'Remember last video playback position' setting."
+gallery,gallery_set_favorite,Go to Downloads Folder and set the first image as favorite,False,4,,,"Tap on the 'Show all folders content' to see different folders including Downloads
+Switch to a folder view to potentially locate the Downloads folder.
+Navigate to the Downloads folder
+Navigate to the Downloads folder to access its contents."
+gallery,gallery_set_wallpaper,Go to Downloads Folder and set the first image as Home screen wallpaper,False,13,,,"Navigate to the Downloads folder.
+Navigate to the Downloads folder to locate the first image.
+Navigate to the Downloads folder to find the desired image.
+Switch to folder view to locate and access the Downloads folder.
+Navigate to the Downloads folder
+Navigate to the Downloads Folder in the Gallery app.
+Launch the Gallery app again from the home screen.
+Tap on the Downloads app to find the Downloads folder in Gallery.
+Verify if there is an issue with the current folder contents and try to display contents again or access other images.
+Tap on the option that can take the user to a list of images in the Downloads folder
+Navigate back and open the Downloads folder to select the first image.
+Tap to open Downloads folder to select the first image
+None, as there are no items present in the 'Downloads' folder."
+gallery,gallery_show_hidden_items,show hidden items in the gallery in settings,True,4,,,"Tap the 'Toggle filename visibility' button.
+Access more options to potentially find the 'show hidden items' toggle.
+Navigate to settings to access options for displaying hidden items.
+Enable 'Show hidden items' option."
+gallery,gallery_sort_by_size_asc,sort the gallery by size ascendingly,True,5,,,"Tap the 'More options' button to find sorting options
+Tap on the 'Sort by' button to see sorting options, including by size.
+Select 'Size' as the sorting criterion and 'Ascending' as the sort order.
+Select 'Ascending' to change the sorting order
+Tap the OK button to apply the changes"
+gallery,gallery_use_24_hour_time_format,Change the date and time format to 24-hour format in gallery settings,True,4,,,"Find and tap on 'More options' to access settings or a menu where date and time format can be changed.
+Navigate to the Settings within the Gallery app to find time format options.
+Tap on 'Change date and time format' to proceed with changing to 24-hour format.
+Enable 24-hour time format"
+launcher,launcher_add_apps,Add Chrome and Camera to launcher,True,3,,,"Open manage visible app icons to configure applications on the launcher.
+Check the checkbox for 'Camera' to add it to the launcher.
+Check the checkbox for Chrome"
+launcher,launcher_check_contributor,Check who is the contributor of the app,False,2,,,"Tap on 'More options' to see if there is any about section.
+Tap on the 'About' button to access the section where contributor information is likely provided."
+launcher,launcher_hide_app_name,Hide app name in Launcher,True,1,,,Tap the button to toggle app name visibility
+launcher,launcher_open_about_FAQ,Open About page and go Frequently Asked Questions,False,2,,,"Access the About page
+Navigate to Frequently Asked Questions"
+launcher,launcher_remove_app,Remove Chrome from Launcher,False,3,,,"Tap on 'Manage visible app icons' button
+Select the Chrome checkbox and tap OK to remove it from the Launcher.
+Uncheck the checkbox next to 'Chrome' and tap on the 'OK' button."
+launcher,launcher_rename_app,Rename Chrome in Launcher to MyChrome,False,5,,,"Interact with the 'More options' button
+Tap on Settings
+Tap on Chrome app
+Locate the option to rename the app
+Choose MyChrome as the new name for Chrome"
+launcher,launcher_search_app,Search for Chrome in Launcher,False,1,,,Interact with the input field to search for 'Chrome'.
+launcher,launcher_setting_close_app_when_launching,Change Setting Close this app at launching a different one to false,False,2,,,"Interact with the 'More options' button
+Tap on 'Settings'"
+launcher,launcher_sort_by_custom,Sort apps by custom,True,2,,,"Interact with the 'Sort by' button
+Select the 'OK' button to confirm the custom sorting"
+launcher,launcher_sort_by_title_desc,Sort apps by title descending,True,2,,,"Tap on the 'Sort by' button to access sorting options.
+Change the sorting order to descending"
+messenger,messager_add_block_numbers,Add a number '\1' to block list,False,2,,,"Navigate to more options to look for blocking features
+Access the settings menu or locate the option to manage the block list."
+messenger,messager_change_font_size,Change the Font size to '\1' in the settings interface,True,3,,,"Tap on the Settings button to open the Settings menu.
+Tap on 'Font size' button to change the current font size.
+Select the 'Large' font size option"
+messenger,messager_check_message_properties,"open the conversation with contact number '\1', and check for a random message_s properties",True,4,,,"Use the search functionality to locate the contact by number '123456789'.
+Input the contact number '123456789' into the search field
+Open the conversation with the contact number '123456789'.
+Tap on the conversation with contact number '123456789' to open it."
+messenger,messager_create_conversation_and_check_message_properties,"start a conversation with number '\1', send a message '\1', and check for message properties",True,6,,,"Search for or select the contact to start a conversation
+Tap on the appropriate contact or conversation to start messaging.
+Type the message 'i luv u' into the input field to send
+Start a conversation with the number '123456789'
+Send SMS to 123456789
+Inspect the message properties to ensure the message 'i luv u' has been sent correctly and verify details."
+messenger,messager_create_conversation_and_search,"start a conversation with number '\1', and send a message '\1', back to the main page and search for the contact '\1'",True,6,,,"Go back to the main page to search for the contact.
+Relaunch the SMS Messenger app to start a new conversation with '123456789'.
+Tap to enter the 'Search' input for searching the contact '123456789'
+Select the appropriate contact draft to start a conversation
+Tap on the 'OK SMS' button to send the message
+Go back to the main page"
+messenger,messager_make_conversation_archived,make the conversation with number '\1' archived,False,2,,,"Tap on the 'More options' button to potentially find an archive option or search for the specific conversation.
+Access the conversation list and locate the chat with '123456789' to archive it"
+messenger,messager_search_contacts,search for the contact '\1' at top search bar,True,1,,,Focus on the search bar and input the contact number '123456789'.
+messenger,messager_search_message,search message '\1' at the top search bar,True,1,,,Input 'i luv u' in the search bar
+messenger,messager_show_archived_messages,show me the archived conversations,False,8,,,"Open the settings to locate archived conversations
+Navigate to a section or submenu where archived conversations can be viewed or managed.
+Tap on the 'More options' button to explore additional features or settings that might include archived conversations.
+Navigate to the section for archived conversations, potentially under 'More options'
+Tap on 'More options' to access the menu where 'Archived conversations' can be selected.
+Open the menu to look for the 'Archived conversations' option
+Open the menu to find the archived conversations option
+Tap on 'More options' again and look for 'Archived'"
+messenger,messager_start_a_conversation,"start a conversation with number '\1', and send a message '\1'",False,14,,,"Start a new conversation
+Select the contact number '123456789'
+Enter the correct message 'i luv u'
+Correct the input text to 'i luv u'
+Tap on the 'OK' button to send the corrected message
+Tap the 'send' button to send the typed message.
+Input the correct message 'i luv u' into the message input field.
+Tap the 'SMS' button to send the message
+Select or reattempt sending the desired message 'i luv u'
+Type the message 'i luv u' into the message input field
+Tap on the 'OK' button to send the message
+Send the entered message
+Re-enter the message in the text input field and click send.
+Tap the button to send the message."
+musicplayer,music_player_album_sort_by_year,sort the album by '\1',False,8,,,"Tap on the 'Sort by' button to reveal the sorting options.
+Identify and select the option for 'Year' in the sort options
+Confirm the current selection of sorting options as 'Sort by Year' is not available and ensure the current selections are appropriate by tapping 'OK'.
+Tap on the 'Sort by' button to choose the 'Sort by year' option.
+Reassess the sorting options or navigate to a previous menu to find 'Year' sorting criterion.
+Tap on the 'Sort by' button to access the sorting options.
+A high level description of the next step is to find and select the 'Year' checkbox in the sorting menu.
+Select the option to sort by 'year'"
+musicplayer,music_player_config_equalizer,config equalizer to Heavy Metal,False,2,,,"Tap the 'Equalizer' button.
+Look for and select the 'Heavy Metal' option in the equalizer presets"
+musicplayer,music_player_create_playlist,droidbot_env,,0,,,
+musicplayer,music_player_create_playlist_and_search,droidbot_env,,0,,,
+musicplayer,music_player_create_playlist_and_sort_desc,droidbot_env,,0,,,
+musicplayer,music_player_open_faq,open faq page,False,5,,,"Tap the More options button
+Tap on the 'Settings' or 'About' option to find the FAQ page.
+Tap the back button to explore more options for accessing the FAQ page.
+Tap 'More options' to explore further settings where FAQ might be available
+Navigate to a menu or subsection that contains the FAQ page option"
+musicplayer,music_player_open_settings,open setting page,True,2,,,"Tap on the 'More options' button to find the settings option.
+Tap on the 'Settings' button to open the settings page."
+musicplayer,music_player_playlist_sort_desc,sort the playlist by '\1',True,3,,,"Tap the 'Sort by' button to access sorting options.
+Select the 'Descending' option to change the sort order to descending
+Confirm the selection to sort the playlist"
+musicplayer,music_player_rescan_media,rescan media files,False,6,,,"Access the settings or options menu to find the rescan option.
+Tap on the 'Settings' button to look for media scan options
+Explore other settings options that might lead to media rescan or library update functionality.
+Tap on 'More options' to explore additional menu items related to rescanning media files.
+Tap on the 'Settings' button to access the settings menu again
+If there's no direct option to rescan, try exploring general or audio settings for media library options."
+note,note_add,add a new note named '\1',True,3,,,"Tap on 'Create a new note' button to start adding a new note.
+Enter the note name 'TODO List' into the label input field
+Finalize the creation of the note"
+note,note_delete,delete the '\1'do'\1' and '\1' note,True,7,,,"Tap on 'meeting' to select the note for deletion
+Tap on 'More options' to find the delete option for the 'meeting' note.
+Tap on 'Delete note' to delete the 'meeting' note.
+Confirm deletion of the 'meeting' note
+Tap on the TODO-List note to prepare for deletion
+Tap on 'More options' to proceed with deleting the 'TODO-List' note.
+Confirm the deletion of the 'TODO-List' note"
+note,note_item_checked,Check the item '\1' for shopping_list,True,2,,,"Tap on the 'shopping' button to open the shopping list note.
+Tap on the 'eggs' button to check it off"
+note,note_lock,use the pin '\1' to open the locked note '\1'list_,True,7,,,"Tap the 'password_list' button to select the note and proceed to unlock it.
+Unlock the note by entering the pin '2580'.
+Enter the PIN '2'
+Tap on the button '5' to continue entering the pin.
+Input the next digit of the PIN, which is '8'.
+Tap the button representing '0' to complete the pin entry
+Tap on the 'Open note' button to view the contents of the unlocked note"
+note,note_new_checklist,add a new Checklist named '\1',True,3,,,"Tap on 'Create a new note' to start creating a new note which can be turned into a checklist.
+Enter the name for the checklist as 'TODO List'
+Confirm the creation of the Checklist by tapping on OK"
+note,note_new_checklist_items,create a checklist named '\1' and add an item named '\1',False,11,,,"Tap 'Create a new note' to start the process of creating a checklist
+Tap the OK button to confirm creation of the checklist
+Input the name of the checklist
+Confirm the creation of the checklist.
+Add 'Milk' as a new checklist item
+Add the item 'Milk' to the checklist.
+Input the text 'Milk' as the new checklist item.
+Add the item 'Milk' to the checklist
+Add an item named 'Milk' as a new checklist item
+Add an item named 'Milk' to the checklist
+Confirm the current action to finalize adding inputs to the checklist"
+note,note_open,open the note '\1',True,1,,,Tap on the 'meeting' button to open the note.
+note,note_open_about,open about page,False,2,,,"Tap on the 'More options' button to look for more options, possibly including the 'About' page.
+Tap the 'About' button to open the about page"
+note,note_rename,rename the current note to '\1'task_,True,6,,,"Open the current note
+Find and select the rename option for the current note
+Go back to navigate to a menu or screen where renaming can be accessed
+Tap on the note to be renamed
+Select the note that you want to rename.
+Input the new name for the note"
+note,note_search,search '\1' in note '\1's secrets_,True,3,,,"Open the note titled 'Charles's secrets'
+Tap the 'Search' button to initiate the search process.
+Input 'secret' into the search field"
+recorder,recorder_bit_rate,change bitrate to 32 kbps,True,3,,,"Tap on the Settings button to access app settings
+Navigate to and tap on the 'Bitrate' button to change the bitrate.
+Tap on the checkbox for 32 kbps to select it."
+recorder,recorder_delete,delete the last recorded audio,False,5,,,"Select the last recorded audio file to see more options for deleting it.
+Tap on delete option for the selected audio file
+Delete the selected audio file
+Proceed to find and tap the delete option for the selected audio.
+Locate and tap on the delete option for the selected audio file."
+recorder,recorder_delete_all,delete all recorded audio,False,7,,,"Navigate to the recordings list within the Voice Recorder app
+Tap on each audio file to delete them or find a 'delete all' option if available.
+Tap on the next recorded audio file to prepare for deletion
+Select an audio file to delete it
+Select the first audio file to delete it.
+Tap on a UI element that allows deleting or managing selected audio files
+Select recorded audio files to delete"
+recorder,recorder_empty_trash,go to settings and empty the recycle bin,False,7,,,"Tap on the Settings button to access the menu where the recycle bin can be emptied.
+Tap on 'go back' to return to the previous menu and look for the Recycle Bin option.
+Open Settings to locate the Recycle Bin option
+Find an option related to storage or recycle bin within the settings.
+Tap on the 'Settings' button to access the settings menu
+Look for a recycle bin option within the settings to proceed with emptying it.
+Tap on settings to look for the option to empty the recycle bin."
+recorder,recorder_extension,use mp3 as the format for new recordings,True,3,,,"Navigate to Settings to find the option to change the recording format.
+Tap on the button to change the recording format
+Tap on mp3 checkbox to select it as the format for new recordings"
+recorder,recorder_recycle_bin,go to recycle bin page,False,6,,,"Navigate to settings or menu to find the Recycle Bin option
+Go back to the main menu of the Voice Recorder app to look for the recycle bin option
+Explore further menu options in the app to find the recycle bin page
+Go back to the main menu or a previous screen in the app to look for the recycle bin option
+Tap on a menu item that might lead to more options where recycle bin can be found
+Navigate back from the settings to find an option related to the recycle bin, possibly from the main menu or another submenu."
+recorder,recorder_recycle_settings,"change settings, so that the deleted items will not go to recycle bin",False,2,,,"Navigate to the settings menu to find the option related to recycle bin behavior.
+Look for an option related to recycle bin settings or deletion behavior."
+recorder,recorder_rename,rename the first audio to '\1',False,6,,,"Tap on the first audio file to access further options such as rename.
+Open the rename option for the selected audio file
+Rename the audio file to 'voice.m4a'.
+Initiate the rename process for the chosen audio file.
+Find and use the rename option for the audio file
+Input the new file name 'voice.m4a'."
+recorder,recorder_rename_all,"rename all audio to voice1.m4a, voice2.m4a, and so on",False,5,,,"Select an audio file to provide options for renaming.
+Select the next audio file to rename it
+Rename the selected audio file '2025_08_18_23_18_44.m4a' to the next sequence in the format (e.g., voice1.m4a or voice2.m4a).
+Open the rename option for the selected file to start renaming it.
+Access rename option for the file 2025_08_18_23_49_23.mp3 to rename it as needed"
+recorder,recorder_theme,change app theme to dark red,False,13,,,"Tap the 'Settings' button to access app settings.
+Tap on 'Customize colors' to begin changing the app theme.
+Tap on the button that allows changing the theme.
+Navigate back to the theme selection screen to choose dark red
+Tap on 'Primary color' to see if there is an option to select 'Dark Red'.
+Confirm the selection of the dark red primary color for the theme.
+Tap on the 'Primary color' button to select or change the color to dark red
+Confirm the selection to change the primary color to dark red
+Select the primary color option to set it to dark red.
+Confirm the choice for a new primary color
+Select 'Primary color' to change it to dark red.
+Input the dark red color code or value into the primary color picker
+Tap on the OK button to confirm the primary color selection as shown in the current UI state"
