@@ -103,7 +103,7 @@ Please note that in our evaluation, we use the ground truth for reference only. 
 
 ### TestFLow
 
-- **Full Model:** [Download](https://drive.google.com/file/d/1OaGa_iiYgbVnwP2Q7oPcPzoO68-AXXwp/view)
+- **Full Model:** [Download](https://drive.google.com/file/d/1fizbQCh_b5woRXEeBEwyGmgrqfQoZJaz/view)
 - **Memory Ablation:** [Download](https://drive.google.com/file/d/1NrXmXDjKfBk3BBgPhv2FrqhAFYnJBoBK/view?usp=drive_link)
 - **Vision Ablation:** [Download](https://drive.google.com/file/d/1Ew-M3fuQdk9AVH6B78dhJk1r4TtSa04b/view)
 
@@ -111,10 +111,11 @@ Please note that in our evaluation, we use the ground truth for reference only. 
 
 - **Guardian:** [Download](https://drive.google.com/file/d/1hb8cfiDvALWW5rssuHyhdcbMM4BMryu_/view?usp=drive_link)
 - **Droidagent:** [Download](https://drive.google.com/file/d/1YQn70w3vl6NYQQxAfD24xUdjFv-s24xx/view?usp=drive_link)
+- **AppAgent:** [Download](https://drive.google.com/file/d/1vTamXHFf70FelK2bAk6TBCjots2m22ZX/view)
 - **Autodroid:** We reused their replication package, available at [GitHub](https://github.com/autodroid-sys/artifacts/tree/main).
 
 ## Acknowledgments
 
-We extend our special thanks to the DroidTask team for releasing their dataset and ground truths. We also thank the [DroidAgent](https://github.com/coinse/droidagent) team for sharing their code, which we adapted for use in TestFlow.
+We extend our special thanks to the [AutoDroid](https://github.com/MobileLLM/AutoDroid) team and [Mobile Agent Bench](https://github.com/MobileAgentBench/mobile-agent-bench) for releasing their dataset and ground truths. We also thank the [DroidAgent](https://github.com/coinse/droidagent) team for sharing their code, which we adapted for use in TestFlow.
 
 We would also like to thank the teams behind [Autodroid](https://github.com/MobileLLM/AutoDroid) , [Guardian](https://github.com/PKU-ASE-RISE/Guardian), [DroidAgent](https://github.com/coinse/droidagent) and [AppAgent](https://github.com/TencentQQGYLab/AppAgent) for sharing their code, which we used in our experiments.
