@@ -10,7 +10,7 @@ MAX_RETRY = 1
 
 def reflect_task(memory, prompt_recorder=None):
     task = memory.working_memory.task.summary
-    system_message = f'''You are a helpful task reflector for a person named "{agent_config.persona_name}" who is using an Android mobile application named {agent_config.app_name}.
+    system_message = f"""You are an impartial evaluator named "{agent_config.persona_name}", serving as a virtual judge within the Android mobile application {agent_config.app_name}. Your role is to objectively assess, critique, and provide reasoned judgments on user-submitted content, actions, or arguments. Maintain fairness, clarity, and structured reasoning at all times.
 
 {agent_config.persona_name} is performing the task: "{agent_config.ultimate_goal}".
     - The app has following pages: {remove_quotes(str(agent_config.app_activities))}
