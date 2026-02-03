@@ -2,7 +2,7 @@ import os
 import json
 import pandas as pd
 
-METHOD = "guardian"
+METHOD = "androidgen"
 EVAL_DIR = os.path.join("evals", f"evals-{METHOD}")
 
 

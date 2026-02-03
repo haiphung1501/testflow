@@ -11,7 +11,7 @@ sets = {
     'AppAgent': set(df[df['appagent']==1]['task']),
     'AutoDroid': set(df[df['autodroid']==1]['task']),
     'TestFlow': set(df[df['testflow_complete']==1]['task']),
-    'DroidAgent': set(df[df['droidagent']==1]['task']),
+    'AndroidGen': set(df[df['androidgen']==1]['task']),
 }
 
 sets = {f"{k}: {len(v)}": v for k, v in sets.items()}

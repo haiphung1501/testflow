@@ -68,7 +68,7 @@ def get_task_by_task_desc(df, app_name, task_desc, df_path=None):
 
 
 # 'autodroid', 'droidagent', 'guardian', 'testflow', 
-methods = ['guardian','droidagent', 'autodroid',  'testflow',  'testflow_no_mem', 'testflow_no_vision','testflow_complete', 'appagent']
+methods = ['guardian','droidagent', 'autodroid',  'testflow',  'testflow_no_mem', 'testflow_no_vision','testflow_complete', 'appagent', 'testflow_no_verifier', 'testflow_vision_only_verifier', 'androidgen']
         #    'testflow_no_vision']
         
 # methods = ["testflow", ]
@@ -82,7 +82,7 @@ merged_df = merged_df.rename(columns={'soa': 'groundtruth'})
 
 # add columns for each method
 for method in methods:
-    merged_df[method] = None
+    merged_df[method] = ''  # Use empty string instead of None
     merged_df[f"{method}_strict_eval"] = None
 
 method_dfs = {}
@@ -105,23 +105,34 @@ for index, row in merged_df.iterrows():
             task = get_task_by_task_desc(method_dfs['testflow'], app_name, task_desc, os.path.join(base_dir, 'all_tasks_.xlsx'))
         if task is None:
             not_founds[method].append(f"{app_name}: {task_desc}")
+            # Set empty string instead of leaving as None/NaN
+            merged_df.at[index, method] = ''
+            merged_df.at[index, f"{method}_strict_eval"] = 0
+            merged_df.at[index, f"{method}_action_eval"] = json.dumps([])  # Empty array
             continue
         else:
             founds[method].append(task)
-            merged_df.at[index, method] = task['soa']
+            # Handle NaN values in task['soa'] - convert to empty string
+            soa_value = task['soa']
+            if pd.isna(soa_value):
+                merged_df.at[index, method] = ''
+                merged_df.at[index, f"{method}_strict_eval"] = 0
+                merged_df.at[index, f"{method}_action_eval"] = json.dumps([])  # Empty array
+                continue
+            merged_df.at[index, method] = soa_value
             # merged_df.at[index, f"valid"] = task['VALID']
             # merged_df.at[index, f"optimal"] = task['OPTIMAL']
             # merged_df.at[index, f"note"] = task['NOTE']
             
             # if merged_df.at[index, method] == row['groundtruth']: set eval to 1
-            if not isinstance(row['groundtruth'], str) or not isinstance(task['soa'], str):
+            if not isinstance(row['groundtruth'], str) or not isinstance(soa_value, str):
                 continue
             gt = row['groundtruth'].replace(' ', '').replace('-', '').replace('_', '').replace('\n', '')
-            candidate = task['soa'].replace(' ', '').replace('-', '').replace('_', '').replace('\n', '')
+            candidate = soa_value.replace(' ', '').replace('-', '').replace('_', '').replace('\n', '')
             merged_df.at[index, f"{method}_strict_eval"] = 1 if gt == candidate else 0
-            merged_df.at[index, f"{method}_action_eval"] = json.dumps(check_action_in_groundtruth(row['groundtruth'], task['soa']))
+            merged_df.at[index, f"{method}_action_eval"] = json.dumps(check_action_in_groundtruth(row['groundtruth'], soa_value))
             
-            if isinstance(task['soa'], str):
+            if isinstance(soa_value, str):
                 if merged_df.at[index, method][-1] != '\n':
                     merged_df.at[index, method] += '\n'
                 merged_df.at[index, method] += f"- ACTION {len(merged_df.at[index, method].split('\n'))}: Task completed?\n"

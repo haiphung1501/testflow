@@ -1,0 +1,14 @@
+{
+  "total_tasks": 150,
+  "total_exact_match_tasks": 88,
+  "exact_match_percentage": 0.5866666666666667,
+  "average_prefix_match": 0.6714824434824436,
+  "total_correct_actions": 597,
+  "total_actions": 875,
+  "macro_average_precision": 0.7643398268398268,
+  "micro_average_precision": 0.6822857142857143,
+  "task_achieved": 128,
+  "total_tasks_completed": 104,
+  "task_completion_percentage": 0.6933333333333334,
+  "task_not_done_but_end": 2
+}

@@ -1,0 +1,12 @@
+applauncher
+calendar
+camera
+clock
+contacts
+dialer
+filemanager
+gallery
+musicplayer
+notes
+smsmessenger
+voicerecorder

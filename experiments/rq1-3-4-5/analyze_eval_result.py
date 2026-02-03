@@ -38,7 +38,7 @@ def prefix_complete(evals, gt):
 # ----- Main -----
 
 # methods = ['autodroid', 'guardian', 'testflow', 'droidagent']
-methods = ['guardian','droidagent', 'autodroid',  'testflow',  'testflow_no_mem', 'testflow_no_vision','testflow_complete','appagent']
+methods = ['guardian','droidagent', 'autodroid',  'testflow',  'testflow_no_mem', 'testflow_no_vision','testflow_complete','appagent', 'androidgen']
         #    'testflow']
 all_results = {}
 task_completion_df = pd.DataFrame(columns=['task']+methods)
@@ -75,7 +75,7 @@ for method in methods:
             df = df._append(row, ignore_index=True)
     print("Length in the beginning: ", len(df))
     
-    all_tasks = pd.read_excel("merged_all_tasks.xlsx")
+    all_tasks = pd.read_excel("merged_all_tasks_.xlsx")
     for index, row in all_tasks.iterrows():
         hash = row['hash']
         app_name = row['app_name']
@@ -201,22 +201,25 @@ rename = {
     "testflow": "TestFlow",
     "testflow_no_mem": "TestFlow-m",
     "testflow_no_vision": "TestFlow-v",
+    "testflow_no_verifier": "TestFlow-no-verifier"
 }
 format_result_df = format_result_df.rename(columns=rename)
-for i, row in format_result_df.iterrows():
-    # cell under col TestFlow-m and TestFlow-v, format as {value} ({testflow - value})
-    # get row index
-    if "#" in i:
-        m_gap = int(row['TestFlow-m'] - row['TestFlow'])
-        m_gap = f"+{m_gap}" if m_gap > 0 else m_gap
-        v_gap = int(row['TestFlow-v'] - row['TestFlow'])
-        v_gap = f"+{v_gap}" if v_gap > 0 else v_gap
-        format_result_df.loc[i, "TestFlow-m"] = f"{int(row['TestFlow-m'])} ({m_gap})"
-        format_result_df.loc[i, "TestFlow-v"] = f"{int(row['TestFlow-v'])} ({v_gap})"
-    else:
-        # format the same but round to 1 decimal place
-        format_result_df.loc[i, "TestFlow-m"] = f"{round(row['TestFlow-m'], 1)} ({round(row['TestFlow-m']-row['TestFlow'], 1)})"
-        format_result_df.loc[i, "TestFlow-v"] = f"{round(row['TestFlow-v'], 1)} ({round(row['TestFlow-v']-row['TestFlow'], 1)})"
+# Only apply TestFlow comparison formatting if those columns exist
+if 'TestFlow-m' in format_result_df.columns and 'TestFlow-v' in format_result_df.columns and 'TestFlow' in format_result_df.columns:
+    for i, row in format_result_df.iterrows():
+        # cell under col TestFlow-m and TestFlow-v, format as {value} ({testflow - value})
+        # get row index
+        if "#" in i:
+            m_gap = int(row['TestFlow-m'] - row['TestFlow'])
+            m_gap = f"+{m_gap}" if m_gap > 0 else m_gap
+            v_gap = int(row['TestFlow-v'] - row['TestFlow'])
+            v_gap = f"+{v_gap}" if v_gap > 0 else v_gap
+            format_result_df.loc[i, "TestFlow-m"] = f"{int(row['TestFlow-m'])} ({m_gap})"
+            format_result_df.loc[i, "TestFlow-v"] = f"{int(row['TestFlow-v'])} ({v_gap})"
+        else:
+            # format the same but round to 1 decimal place
+            format_result_df.loc[i, "TestFlow-m"] = f"{round(row['TestFlow-m'], 1)} ({round(row['TestFlow-m']-row['TestFlow'], 1)})"
+            format_result_df.loc[i, "TestFlow-v"] = f"{round(row['TestFlow-v'], 1)} ({round(row['TestFlow-v']-row['TestFlow'], 1)})"
     
 format_result_df.to_csv("summary/formatted_results.csv")
     

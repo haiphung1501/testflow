@@ -68,8 +68,21 @@ def show_next():
 def update_display():
     global df, current_index, candidate_entries
     
-    gt_actions = df.iloc[current_index]['groundtruth'].strip().split('\n')
-    candidate_actions = df.iloc[current_index][comparing_method].strip().split('\n')
+    # Handle NaN values for groundtruth
+    gt_value = df.iloc[current_index]['groundtruth']
+    if pd.isna(gt_value):
+        gt_actions = []
+    else:
+        gt_actions = str(gt_value).strip().split('\n') if str(gt_value).strip() else []
+    
+    # Handle NaN values for comparing_method and check if column exists
+    if comparing_method not in df.columns:
+        raise KeyError(f"Column '{comparing_method}' not found in dataframe. Available columns: {list(df.columns)}")
+    candidate_value = df.iloc[current_index][comparing_method]
+    if pd.isna(candidate_value):
+        candidate_actions = []
+    else:
+        candidate_actions = str(candidate_value).strip().split('\n') if str(candidate_value).strip() else []
     original_gt_size = len(candidate_actions)
     action_evals = df.iloc[current_index][f"{comparing_method}_action_eval"]
     action_evals = json.loads(action_evals) if not pd.isna(action_evals) else []
@@ -110,8 +123,8 @@ def update_display():
 
         # if action eval is true, color text is green, else red
         color = "green" if action_eval else "red"
-        # Candidate actions
-        candidate_label = tk.Label(frame, text=candidate_action, anchor="w", wraplength=600, font=("Arial", 15), fg=color)
+        # Candidate actions (slightly smaller font size)
+        candidate_label = tk.Label(frame, text=candidate_action, anchor="w", wraplength=600, font=("Arial", 13), fg=color)
         candidate_label.grid(row=i+5, column=1, padx=10, pady=5, sticky="w")
 
         if i >= original_gt_size: # Skip the input for extra candidate actions
@@ -161,7 +174,12 @@ def save_results():
     app_name = df.iloc[current_index]['app_name']
     task_desc = df.iloc[current_index]['task_desc']
     hash = df.iloc[current_index]['hash']
-    actions = df.iloc[current_index][comparing_method].split('\n')
+    # Handle NaN values for comparing_method
+    candidate_value = df.iloc[current_index][comparing_method]
+    if pd.isna(candidate_value):
+        actions = []
+    else:
+        actions = str(candidate_value).split('\n') if str(candidate_value) else []
     results = {
         'app_name': app_name,
         'task_desc': task_desc,

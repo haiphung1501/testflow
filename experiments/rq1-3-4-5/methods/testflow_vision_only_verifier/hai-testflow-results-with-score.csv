@@ -1,0 +1,575 @@
+app_name,task_desc,gpt_gen_result,success,n_actions,soa,related_score,selected
+applauncher,Change column count to 3,"The task to change the column count to 3 was already set as the ""3 columns"" option was found to be checked upon accessing the column count settings.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Column count""",,True
+applauncher,Change theme color to light,"Jade Green navigated to the Customization page and is in a position to change the theme color to light, but the final action to change the theme was not executed.",FAILURE,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green touched on a button that has text ""Customize colors""",,True
+applauncher,Disable closing this app when launching a different one,"The task was successfully completed by unchecking the checkbox labeled ""Close this app at launching a different one"" in the Settings page.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green touched on a checkbox that has text ""Close this app at launching a different one""
+- ACTION 4: Jade Green touched on a checked checkbox that has text ""Close this app at launching a different one""",,True
+applauncher,Search 'Clock' app and open it,,FAILURE,2,"- ACTION 1: Jade Green touched on a textfield that has text ""Search""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Search"" with the text ""Clock""",,True
+applauncher,Sort apps by title in descending order,"The task to sort apps by title in descending order was initiated but not completed; the sorting options were displayed, but the final selection and confirmation were not made.",FAILURE,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Sort by""",,True
+calendar,Add all my contacts' birthdays into the calendar,Jade Green successfully added a birthday event for a contact into the calendar with annual repetition set for the event.,SUCCESS,6,"- ACTION 1: Jade Green touched on a button that has content_desc ""New Event""
+- ACTION 2: Jade Green touched on a button that has text ""Event""
+- ACTION 3: Jade Green filled a focused textfield that has text ""Title"" with the text ""[Contact's Name] Birthday""
+- ACTION 4: Jade Green touched on a checkbox that has text ""All-day""
+- ACTION 5: Jade Green touched on a button that has text ""No repetition""
+- ACTION 6: Jade Green touched on a button that has text ""Yearly""",,True
+calendar,Add all the contacts anniversaries into Calendar,"Jade Green successfully added a contact's anniversary to the Calendar, ensuring it repeats yearly on the specified date.",SUCCESS,9,"- ACTION 1: Jade Green touched on a button that has content_desc ""New Event""
+- ACTION 2: Jade Green touched on a button that has text ""Event""
+- ACTION 3: Jade Green filled a focused textfield that has text ""Title"" with the text ""Contact's Name Anniversary""
+- ACTION 4: Jade Green touched on a button that has text ""No repetition""
+- ACTION 5: Jade Green touched on a button that has text ""Yearly""
+- ACTION 6: Jade Green touched on a button that has text ""January 11 (Sun)""
+- ACTION 7: Jade Green touched on a button that has text ""12""
+- ACTION 8: Jade Green touched on a button that has text ""OK""
+- ACTION 9: Jade Green touched on a button that has content_desc ""Save""",,True
+calendar,"Add the event of 'VisitParents' on july 30, remind me 1 hour before, save","Jade Green attempted to add an event titled 'VisitParents' on July 30 and set a reminder for it, but the task was not completed due to excessive navigation through the calendar months without reaching the desired date.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has content_desc ""New Event""
+- ACTION 2: Jade Green touched on a button that has text ""Event""
+- ACTION 3: Jade Green filled a focused textfield that has text ""Title"" with the text ""VisitParents""
+- ACTION 4: Jade Green touched on a button that has text ""January 11 (Sun)""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Next month""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Next month""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Next month""
+- ACTION 8: Jade Green touched on a button that has content_desc ""Next month""
+- ACTION 9: Jade Green touched on a button that has content_desc ""Next month""
+- ACTION 10: Jade Green touched on a button that has content_desc ""Previous month""
+- ACTION 11: Jade Green touched on a button that has content_desc ""Next month""",,True
+calendar,Add the holidays of China to the calendar,"The task to add the holidays of China to the calendar was initiated but not completed, as Jade Green reached a page related to event reminders instead of confirming the addition of holidays.",FAILURE,5,"- ACTION 1: Jade Green touched on a button that has text ""Holidays""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""JANUARY, 12 Monday, Contact's Name Anniversary[...and more]""
+- ACTION 3: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 4: Jade Green touched on a button that has text ""Add holidays""
+- ACTION 5: Jade Green touched on a button that has text ""China""",,True
+calendar,Add the holidays of South Africa to the calendar and list all the events,"The holidays of South Africa were successfully added to the calendar, and the events were listed on the main page.",SUCCESS,6,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Add holidays""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""Algeria, Argentina, Australia[...and more]""
+- ACTION 4: Jade Green scrolled down on a scrollable area that has text ""Hellas, Hrvatska, India[...and more]""
+- ACTION 5: Jade Green touched on a button that has text ""South Africa""
+- ACTION 6: Jade Green touched on a button that has text ""OK""",,True
+calendar,Add the holidays of United States to the calendar,"Jade Green successfully added the holidays of the United States to the calendar, as evidenced by the presence of holiday events such as ""M L King Day"" and ""Presidents' Day"" in the calendar view.",SUCCESS,7,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Add holidays""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""Algeria, Argentina, Australia[...and more]""
+- ACTION 4: Jade Green scrolled down on a scrollable area that has text ""Hellas, Hrvatska, India[...and more]""
+- ACTION 5: Jade Green scrolled down on a scrollable area that has text ""Nigeria, Norge, Österreich[...and more]""
+- ACTION 6: Jade Green touched on a button that has text ""United States""
+- ACTION 7: Jade Green touched on a button that has text ""OK""",,True
+calendar,Change the event reminder sound of Calendar app to adara,"The task to change the event reminder sound to ""adara"" was not completed successfully due to repeated navigation and lack of access to the specific setting needed.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green touched on a button that has text ""Customize notifications""
+- ACTION 4: Jade Green touched on a button that has text ""Advanced, Allow notification dot""
+- ACTION 5: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 6: Jade Green touched on a button that has text ""Audio stream used by reminders""
+- ACTION 7: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 8: Jade Green touched on a button that has text ""Customize notifications""
+- ACTION 9: Jade Green touched on a button that has text ""Advanced, Allow notification dot""
+- ACTION 10: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 11: Jade Green touched on a button that has text ""Customize notifications""",,True
+calendar,Change the event type 'regular event' to 'deadlines',"Jade Green attempted to change the event type to 'deadlines', but the actions performed only resulted in filtering the events displayed on the Main page rather than changing the event type.",FAILURE,2,"- ACTION 1: Jade Green touched on a button that has text ""Deadlines""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Filter events by type""",,True
+calendar,Change the snooze time to 30 min,"Jade Green successfully navigated to the ""Settings"" page and confirmed the snooze time is set to 30 minutes.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""",,True
+calendar,Change the view from monthly to yearly,"The task of changing the view from monthly to yearly was successfully completed, resulting in the display of a yearly calendar view for 2026.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Change view""
+- ACTION 2: Jade Green touched on a button that has text ""Yearly view""",,True
+calendar,"Create a new event, the task is 'laundry', save it","The task to create and save a new event for ""laundry"" was not completed successfully, as Jade Green did not reach the event creation stage and instead navigated through several views without achieving the goal.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 3: Jade Green touched on a button that has content_desc ""Change view""
+- ACTION 4: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 5: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 6: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 7: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/small_month_view""
+- ACTION 8: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/month_view_background""
+- ACTION 9: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/month_view_background""
+- ACTION 10: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 11: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/month_view_background""",,True
+calendar,Create an event of 'homework' with daily repetition and save it,The task to create an event of 'homework' with daily repetition and save it was not completed successfully. Jade Green navigated through various calendar views but did not reach the step to create or save an event.,FAILURE,11,"- ACTION 1: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/small_month_view""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Change view""
+- ACTION 3: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 4: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 5: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/small_month_view""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 7: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/small_month_view""
+- ACTION 8: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/month_view_background""
+- ACTION 9: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 10: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/small_month_view""
+- ACTION 11: Jade Green touched on a button that has resource_id ""com.simplemobiletools.calendar.pro:id/month_view_background""",,True
+calendar,Delete all the events in the Calendar app,The task was not completed as Jade Green decided to stop midway after encountering multiple steps and confirmations required to delete all events.,FAILURE,11,"- ACTION 1: Jade Green long touched on a button that has text ""M L King Day, All-day""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Delete""
+- ACTION 3: Jade Green touched on a button that has text ""Delete all occurrences""
+- ACTION 4: Jade Green touched on a button that has text ""Yes""
+- ACTION 5: Jade Green long touched on a button that has text ""Presidents' Day, All-day""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Delete""
+- ACTION 7: Jade Green touched on a button that has text ""No""
+- ACTION 8: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 9: Jade Green touched on a button that has text ""Delete all occurrences""
+- ACTION 10: Jade Green touched on a button that has text ""Yes""
+- ACTION 11: Jade Green long touched on a button that has text ""Human Rights Day, All-day""",,True
+calendar,Disable start week on Sunday,Jade Green navigated to the Settings page but did not perform the necessary actions to disable the week starting on Sunday.,FAILURE,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+calendar,Export the events to test.ics under DCIM folder,"Jade Green attempted to export events to a file but did not successfully complete the task, as the actions taken did not lead to the intended outcome.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 3: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 4: Jade Green touched on a button that has text ""Settings""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 6: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 7: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 8: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 9: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 10: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 11: Jade Green touched on a button that has text ""Settings""",,True
+calendar,Search the task 'homework',"The task to search for ""homework"" resulted in no items found, indicating that there are no entries matching ""homework"" in the current calendar.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Search"" with the text ""homework""",,True
+calendar,Use 24 hour formats in the Calendar app,"The task of using the 24-hour time format in the Calendar app was successfully accomplished by accessing the settings and confirming the checkbox for ""Use 24-hour time format"" is checked.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+camera,Add the last photo to favorite,The task to add the last photo to favorites was successfully completed by toggling the favorite button on the media viewing interface.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Toggle favorite""",,True
+camera,Check the size of the last photo i took,"Jade Green successfully checked the size of the last photo taken, although it was actually a video file that was last captured, with a size of 1.1 MB.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Properties""",,True
+camera,Close the shutter sound,,FAILURE,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+camera,Delete the last photo I took,"The task was successfully completed, and the last photo taken was deleted and moved to the Recycle Bin.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Delete""
+- ACTION 3: Jade Green touched on a button that has text ""Yes""",,True
+camera,Move the last photo i took to folder 'movies' in sd card,"The task was successfully completed by moving the last photo to the ""Movies"" folder on the SD card using the app's interface for file management.",SUCCESS,8,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 3: Jade Green touched on a button that has text ""Move to""
+- ACTION 4: Jade Green touched on a button that has text ""Other folder""
+- ACTION 5: Jade Green touched on a button that has text ""Internal""
+- ACTION 6: Jade Green touched on a button that has text ""SD Card""
+- ACTION 7: Jade Green touched on a button that has text ""Movies, 0 items""
+- ACTION 8: Jade Green touched on a button that has text ""> Movies""",,True
+camera,Open the last picture I took,"Jade Green successfully opened the last picture taken, ""IMG_20251231_103938.jpg"", and accessed options to interact with it, such as editing, sharing, and deleting.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""",,True
+camera,Print the last picture I took as pic3.jpg,"Jade Green successfully renamed the last captured image to ""pic3.jpg"" and saved it as a PDF in the ""Downloads"" folder.",SUCCESS,7,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 3: Jade Green touched on a button that has text ""Print""
+- ACTION 4: Jade Green touched on a button that has text ""Select a printer""
+- ACTION 5: Jade Green touched on a button that has text ""Save as PDF""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Save to PDF""
+- ACTION 7: Jade Green filled a textfield that has text ""IMG_20251231_103938.jpg"" with the text ""pic3.jpg""",,True
+camera,Record a short video,Jade Green successfully recorded a short video by switching to video mode and starting the recording.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has text ""Video""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Shutter""",,True
+camera,Rename the last photo to 'sunset',"Jade Green successfully renamed the last photo from ""IMG_20260111_175548"" to ""sunset"" using the app's renaming functionality.",SUCCESS,5,"- ACTION 1: Jade Green touched on a button that has text ""Photo""
+- ACTION 2: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 3: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 4: Jade Green touched on a button that has text ""Rename""
+- ACTION 5: Jade Green filled a focused textfield that has text ""IMG_20260111_175548"" with the text ""sunset""",,True
+camera,Resize the last photo to 1000:473,"The last photo was successfully resized to dimensions 1000x473 and saved with the same file name, ""IMG_20260111_175548.jpg.""",SUCCESS,8,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Edit""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Resize""
+- ACTION 4: Jade Green touched on a checked checkbox that has text ""Keep aspect ratio""
+- ACTION 5: Jade Green filled a focused textfield that has text ""902"" with the text ""1000""
+- ACTION 6: Jade Green filled a textfield that has text ""1856"" with the text ""473""
+- ACTION 7: Jade Green touched on a button that has text ""OK""
+- ACTION 8: Jade Green touched on a button that has text ""OK""",,True
+camera,Rotate right the last picture I took and save it as pic4.jpg,"The task was completed successfully, with the image being rotated to the right and saved as ""pic4.jpg"".",SUCCESS,10,"- ACTION 1: Jade Green touched on a button that has content_desc ""View last captured media""
+- ACTION 2: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 3: Jade Green filled a focused textfield that has text ""pic3.jpg"" with the text ""pic4.jpg""
+- ACTION 4: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 5: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 6: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 7: Jade Green touched on a button that has content_desc ""Rotate""
+- ACTION 8: Jade Green touched on a button that has text ""Rotate right""
+- ACTION 9: Jade Green touched on a button that has content_desc ""Save as""
+- ACTION 10: Jade Green filled a focused textfield that has text ""IMG_20251231_103938"" with the text ""pic4""",,True
+camera,Set photo compression quality to 50%,The task of setting the photo compression quality to 50% was already achieved as the current settings display this value. No further action was needed as the desired setting was already in place.,SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+camera,Take a selfie,"Jade Green successfully took a selfie by switching to the photo mode, toggling to the front camera, and pressing the shutter button.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has text ""Photo""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Toggle front/back camera""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Shutter""",,True
+camera,Take a short selfie video,"Jade Green successfully took a short selfie video by switching to video mode, toggling to the front camera, and using the shutter button to start and stop recording.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has text ""Video""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Toggle front/back camera""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Shutter""
+- ACTION 4: Jade Green touched on a selected button that has content_desc ""Shutter""",,True
+camera,Use volume button as shutter,"The task was successfully completed as the ""Use volume buttons as shutter"" option is checked in the Settings page.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+clock,Add a new timer of 5:00,"Jade Green successfully added a new timer set to 5:00 on the Timer view of the Clock app. The Timer tab is now selected, displaying a countdown with the specified time.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Timer""",,True
+clock,Change alarm max reminder duration to 1 minute,The task of changing the alarm max reminder duration to 1 minute was successfully completed by selecting the appropriate duration option in the settings menu.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Max reminder duration, 5 minutes""
+- ACTION 3: Jade Green touched on a button that has text ""1 minute""",,True
+clock,Change timer max reminder duration to 5 minutes,The task to change the timer max reminder duration to 5 minutes was successfully completed by selecting the appropriate option in the Settings menu.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Max reminder duration""",,True
+clock,Check the frequently asked questions,Jade Green successfully navigated to the FAQ page and accessed the frequently asked questions related to the app.,SUCCESS,3,"- ACTION 1: Jade Green scrolled down on a scrollable area that has text ""8:12:35 PM, Sun, 11 Jan""
+- ACTION 2: Jade Green touched on a button that has content_desc ""About""
+- ACTION 3: Jade Green touched on a button that has text ""Frequently asked questions""",,True
+clock,Disable 'start week on sunday',"The task was successfully completed by unchecking the ""Start week on Sunday"" option in the Settings menu.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a checked checkbox that has text ""Start week on Sunday""",,True
+clock,Do not prevent the phone from entering sleep mode when the application,The task of ensuring the phone does not prevent entering sleep mode when the application is in use was successfully completed by unchecking the relevant option in the settings.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a checkbox that has text ""Prevent phone from sleeping while the app is in fo[...]""
+- ACTION 3: Jade Green touched on a checked checkbox that has text ""Prevent phone from sleeping while the app is in fo[...]""",,True
+clock,Open the clock page,"Jade Green successfully navigated to the main clock page, which displays the current time and date, along with options for alarm, stopwatch, and timer functions. The task was completed without unnecessary steps.",SUCCESS,1,- ACTION 1: Jade Green waited for a loading state to finish,,True
+clock,Set the snooze time to 5 minute,"Jade Green successfully set the snooze time to 5 minutes by enabling the ""Always use same snooze time"" option and confirming the snooze time displayed as 5 minutes in the settings.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Always use same snooze time""",,True
+clock,Set the sorting order for alarms by 'Day and Alarm time',Jade Green successfully set the sorting order for alarms by 'Day and Alarm time' in the Clock app.,SUCCESS,7,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""Customize widget colors, GENERAL, Prevent phone from sleeping while the app is in fo[...][...and more]""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 5: Jade Green touched on a button that has text ""Alarm""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Sort by""
+- ACTION 7: Jade Green touched on a button that has text ""Day and Alarm time""",,True
+clock,Turn off always use same snooze time,"Jade Green successfully turned off the ""Always use same snooze time"" option by unchecking the corresponding checkbox in the Settings page, which resulted in the removal of related snooze settings and the addition of ""Max reminder duration"" widgets.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a checked checkbox that has text ""Always use same snooze time""",,True
+clock,Turn off increase volume gradually,"The task to turn off the ""Increase volume gradually"" setting was not accomplished because only the navigation to the Settings screen was performed, and no further actions were taken to interact with the specific setting.",FAILURE,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+clock,Turn on the '7:00 am' alarm clock vibration function,Jade Green successfully navigated to the alarm settings and accessed the option to enable vibration for the 7:00 am alarm.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has text ""Alarm""
+- ACTION 2: Jade Green touched on a button that has text ""7:00 am, Mon, Tue, Wed, Thu, Fri""",,True
+contacts,Add contact Bob to Favorites,"The task of adding Bob to favorites was successfully completed after navigating through contact views and toggling the favorite status. However, there were some unnecessary steps taken, such as re-searching for the contact after already toggling the favorite status.",SUCCESS,8,"- ACTION 1: Jade Green scrolled down on a scrollable area that has text ""Smith Smith, John Smith, 1234567890[...and more]""
+- ACTION 2: Jade Green touched on a button that has text ""Stephen Bob""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Toggle favorite""
+- ACTION 4: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 5: Jade Green scrolled down on a scrollable area that has text ""Smith Smith, John Smith, 1234567890[...and more]""
+- ACTION 6: Jade Green touched on a textfield that has text ""Search""
+- ACTION 7: Jade Green filled a focused textfield that has text ""Search"" with the text ""Bob""
+- ACTION 8: Jade Green touched on a button that has text ""Stephen Bob""",,True
+contacts,Change Bob's mobile number from '222222' to '12345678900',"The task to change Bob's mobile number from '222222' to '12345678900' was successfully completed, as evidenced by the updated number displayed on the ViewContact page.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Stephen Bob""",,True
+contacts,Change the font size of the Contacts app to medium,"Jade Green successfully navigated to the Settings page and identified the font size setting as ""Medium,"" indicating that the font size was already set to the desired size or had been changed correctly.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+contacts,"Create a new contact Stephen Bob, mobile number 12345678900","The contact ""Stephen Bob"" was successfully created with the mobile number ""12345678900"" on the EditContact page.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create new contact""
+- ACTION 2: Jade Green filled a textfield that has text ""First name"" with the text ""Stephen""
+- ACTION 3: Jade Green filled a textfield that has text ""Surname"" with the text ""Bob""",,True
+contacts,"Create a new group 'Classmates',add Alice,Bob and Jack to the new group,","The task to create a new group 'Classmates' and add Alice, Bob, and Jack was not fully completed, as Jack was not added and only Alice and Bob were included in the group. The task was stopped prematurely due to excessive steps and a decision to start a new task instead of completing the current one.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has text ""Groups""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Create group""
+- ACTION 3: Jade Green filled a focused textfield that has text ""Title"" with the text ""Classmates""
+- ACTION 4: Jade Green touched on a button that has text ""OK""
+- ACTION 5: Jade Green touched on a button that has text ""Classmates (0)""
+- ACTION 6: Jade Green touched on a button that has text ""Add contacts""
+- ACTION 7: Jade Green touched on a checkbox that has resource_id ""com.simplemobiletools.contacts.pro:id/contact_checkbox""
+- ACTION 8: Jade Green touched on a checkbox that has resource_id ""com.simplemobiletools.contacts.pro:id/contact_checkbox""
+- ACTION 9: Jade Green touched on a button that has text ""OK""
+- ACTION 10: Jade Green long touched on a button that has text ""Stephen Bob""
+- ACTION 11: Jade Green touched on a button that has content_desc ""More options""",,True
+contacts,Delete contact Bob,"The attempt to delete the contact ""Bob"" was unsuccessful because the search resulted in ""No items found,"" indicating that ""Bob"" is not in the contacts list.",FAILURE,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Search"" with the text ""Bob""",,True
+contacts,Disable showing the dial pad button on the main screen,The task of disabling the dial pad button on the main screen was completed successfully by unchecking the corresponding checkbox in the settings.,SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, GENERAL[...and more]""
+- ACTION 3: Jade Green touched on a checkbox that has text ""Show a dialpad button on the main screen""
+- ACTION 4: Jade Green touched on a checked checkbox that has text ""Show a dialpad button on the main screen""",,True
+contacts,Export contacts to a .vcf file 'classmate.vcf'',,FAILURE,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Export contacts to a .vcf file""
+- ACTION 3: Jade Green filled a textfield that has text ""contacts_2026_01_11_19_39_28"" with the text ""classmate""",,True
+contacts,Open Bob's information page and call him,"The task of opening Bob's information page and calling him was successfully completed, resulting in a call being initiated with Bob.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Call contact""",,True
+contacts,Open dialpad and call 911,"The task of opening the dialpad and calling 911 was successfully completed, resulting in an active call on the in-call interface.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Dialpad""
+- ACTION 3: Jade Green filled a focused textfield that has resource_id ""com.simplemobiletools.dialer:id/dialpad_input"" with the text ""911""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Call number""",,True
+contacts,Send a text message to Bob with the following content:'Goodmorning',"Jade Green successfully sent a text message to Bob with the content ""Goodmorning"" and confirmed the message was visible in the conversation thread.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""SMS""",,True
+contacts,Show phone numbers in the list view,"Jade Green successfully navigated to the settings and ensured that phone numbers are shown in the list view by checking the ""Phone numbers"" checkbox.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green touched on a button that has text ""Manage shown contact fields""",,True
+contacts,"Sort contacts based on ""Date created"" in descending order","The task was successfully completed as the contacts were sorted based on ""Date created"" in descending order after selecting the appropriate options from the sorting menu.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Sort by""",,True
+dialer,Add contact Alice to favorites,The task of adding Alice to favorites was successfully completed by toggling the favorite option in her contact details view.,SUCCESS,5,"- ACTION 1: Jade Green long touched on a button that has text ""Alice""
+- ACTION 2: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 3: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 4: Jade Green touched on a button that has content_desc ""View contact details""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Toggle favorite""",,True
+dialer,Adjust font size to medium,"The task of adjusting the font size to medium was successfully accomplished, as indicated by the text ""Medium"" next to ""Font size"" on the Settings page.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+dialer,Call 911,The task of calling 911 was successfully completed using the Dialpad page of the app.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Dialpad""
+- ACTION 2: Jade Green filled a focused textfield that has resource_id ""com.simplemobiletools.dialer:id/dialpad_input"" with the text ""911""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Call number""",,True
+dialer,Call Alice,"The task of calling Alice was successfully completed by navigating from the main screen to a contact view, selecting the call option, and choosing a specific number to dial. The call interface was then displayed with call control options available.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has text ""Alice""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Call contact""
+- ACTION 3: Jade Green touched on a button that has text ""1234567890 (Mobile)""",,True
+dialer,"Create a new contact John Smith, moblie number 12345678900","The task of creating a new contact named John Smith with the mobile number 12345678900 was successfully completed, and the contact appears in the list on the Main page.",SUCCESS,6,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create new contact""
+- ACTION 2: Jade Green filled a textfield that has text ""First name"" with the text ""John""
+- ACTION 3: Jade Green filled a textfield that has text ""Surname"" with the text ""Smith""
+- ACTION 4: Jade Green filled a textfield that has text ""Number"" with the text ""12345678900""
+- ACTION 5: Jade Green filled a textfield that has text ""Number"" with the text ""12345678900""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Save""",,True
+dialer,Delete all call history,"The task to delete all call history was not completed successfully, as Jade Green encountered a lengthy and complex process and decided to stop and start a new task instead.",FAILURE,11,"- ACTION 1: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 2: Jade Green touched on a button that has text ""Discard""
+- ACTION 3: Jade Green touched on a button that has content_desc ""End call""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Navigate up""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Navigate up""
+- ACTION 6: Jade Green touched on a button that has text ""Recents""
+- ACTION 7: Jade Green long touched on a button that has text ""‪1234567890‬, 5 min. ago""
+- ACTION 8: Jade Green touched on a button that has text ""Delete""
+- ACTION 9: Jade Green long touched on a button that has text ""‪1 234-567-8900‬, Ohio, 35 min. ago""
+- ACTION 10: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 11: Jade Green touched on a button that has content_desc ""More options""",,True
+dialer,Delete contact Jack,"The task to delete the contact ""Jack"" was unsuccessful as no contact named ""Jack"" was found in the contact list.",FAILURE,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Search"" with the text ""Jack""
+- ACTION 3: Jade Green pressed ""BACK"" button to navigate back",,True
+dialer,Modify Alice's mobile number to 1234567890 and save it,Alice's mobile number has been successfully modified to 1234567890 and saved. The ViewContact page confirms the updated number is displayed correctly.,SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Alice""",,True
+dialer,Search call history with Bob,"Jade Green successfully initiated the search functionality within the call history but did not complete the search with an input for ""Bob"".",FAILURE,2,"- ACTION 1: Jade Green touched on a button that has text ""Call History""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Search""",,True
+dialer,Search contact Alice and check her info,"Jade Green successfully located and reviewed Alice's contact information, which includes options to call, send SMS, and edit or share the contact.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Alice""",,True
+dialer,Sort contacts by first name,"The task of sorting contacts by first name was successfully executed by Jade Green, who accessed the sorting options menu and selected ""First name"" along with the ""Ascending"" order.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Sort by""",,True
+dialer,Text Alice that I-love-you,"The task was successfully completed with the message ""I-love-you"" being sent to Alice, and the input field reset to ""Type a message…"".",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""SMS""",,True
+dialer,Turn on hide dialpad numbers,"The task was successfully completed by navigating to the Settings page and confirming that the ""Hide dialpad numbers"" option is checked.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+dialer,View favorite contacts,"Jade Green successfully accessed the ""Favorites"" section to view favorite contacts.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Favorites""",,True
+filemanager,Add 'alarms' as favorite,"The task to add 'Alarms' as a favorite was initiated, but it was not completed successfully as the process was interrupted by canceling the renaming interface.",FAILURE,10,"- ACTION 1: Jade Green scrolled down on a scrollable area that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 2: Jade Green touched on a button that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 3: Jade Green touched on a button that has text ""Internal shared storage, 2.69 GB used of 8.00 GB""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 6: Jade Green touched on a button that has resource_id ""com.simplemobiletools.filemanager.pro:id/expand_button""
+- ACTION 7: Jade Green touched on a button that has text ""Files""
+- ACTION 8: Jade Green long touched on a button that has text ""Alarms""
+- ACTION 9: Jade Green touched on a button that has content_desc ""Add to favorites""
+- ACTION 10: Jade Green touched on a button that has text ""Cancel""",,True
+filemanager,Change font size of the File manager app to large,"Jade Green navigated to the Settings page but did not explicitly change the font size to large; however, the current font size is already set to ""Large"" as per the page's text view.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+filemanager,Change pressing 'back' from twice to once to leave the app,Jade Green successfully changed the setting to require only one press of the back button to exit the app.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a checkbox that has text ""Require pressing Back twice to leave the app""
+- ACTION 3: Jade Green touched on a checked checkbox that has text ""Require pressing Back twice to leave the app""",,True
+filemanager,Change the storage type to sd card,The task was successfully completed as Jade Green navigated to the SD card storage and viewed its contents.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has text ""SD Card, 834.3 MB, free[...and more]""
+- ACTION 2: Jade Green touched on a button that has text ""SDCARD, 1.25 MB used of 836 MB""",,True
+filemanager,Change the theme to light,"The theme was successfully changed to light by navigating through the Settings and Customization pages and selecting the ""Light"" option.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Customize colors""
+- ACTION 3: Jade Green touched on a button that has text ""Theme, Dark""
+- ACTION 4: Jade Green touched on a button that has text ""Light""",,True
+filemanager,Change the view type to grid,,FAILURE,10,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, GENERAL[...and more]""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""Require pressing Back twice to leave the app, VISIBILITY, Show hidden items[...and more]""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 6: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 8: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 9: Jade Green touched on a button that has resource_id ""com.simplemobiletools.filemanager.pro:id/expand_button""
+- ACTION 10: Jade Green touched on a button that has text ""Files""",,True
+filemanager,Check the total storage of my phone,"Jade Green successfully checked the total storage of the phone by viewing the Storage settings, which displayed both internal shared storage and portable storage details.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Internal, 5.3 GB, free[...and more]""",,True
+filemanager,Disable showing the 'recents' tabs,"The task of disabling the ""recents"" tab was successfully accomplished by unchecking the ""Recent files"" checkbox in the settings.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Manage shown tabs""
+- ACTION 3: Jade Green touched on a checkbox that has text ""Recent files""
+- ACTION 4: Jade Green touched on a checked checkbox that has text ""Recent files""",,True
+filemanager,Go to 'download' folder and open Diary.pdf,"The task to open ""Diary.pdf"" in the ""Download"" folder was not successful, as the file could not be found in the search results.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 3: Jade Green touched on a button that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 4: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 5: Jade Green touched on a button that has text ""Files""
+- ACTION 6: Jade Green touched on a button that has text ""Download""
+- ACTION 7: Jade Green scrolled down on a scrollable area that has text ""Internal, > Download, Messages_2023_07_01_11_04_43 (1).json[...and more]""
+- ACTION 8: Jade Green scrolled down on a scrollable area that has text ""Internal, > Download, Messages_2023_07_01_11_04_43 (1).json[...and more]""
+- ACTION 9: Jade Green scrolled down on a scrollable area that has text ""Internal, > Download, Messages_2023_07_01_11_04_43 (1).json[...and more]""
+- ACTION 10: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 11: Jade Green filled a focused textfield that has text ""Search"" with the text ""Diary.pdf""",,True
+filemanager,Go to recents and play video2.mp4,"Jade Green attempted to navigate through the file manager to play a video file but ultimately did not reach the ""Recents"" section nor locate ""video2.mp4"" before deciding to abandon the task.",FAILURE,11,"- ACTION 1: Jade Green scrolled down on a scrollable area that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 3: Jade Green touched on a button that has text ""Files""
+- ACTION 4: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 5: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 6: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 8: Jade Green scrolled down on a scrollable area that has text ""DCIM, Music, Download[...and more]""
+- ACTION 9: Jade Green scrolled down on a scrollable area that has text ""DCIM, Music, Download[...and more]""
+- ACTION 10: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 11: Jade Green pressed ""BACK"" button to navigate back",,True
+filemanager,Go to the 'recent' tab and open the test1.m4a,"Jade Green attempted to locate and open the 'test1.m4a' file using the search function, but the task was not completed as the file was not opened.",FAILURE,5,"- ACTION 1: Jade Green scrolled right on a scrollable area that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 2: Jade Green scrolled right on a scrollable area that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 3: Jade Green scrolled right on a scrollable area that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 5: Jade Green filled a focused textfield that has text ""Search"" with the text ""test1.m4a""",,True
+filemanager,"Open 'android' folder, sort the files by extension","Jade Green successfully navigated to the ""Android"" folder and opened the sorting interface, selecting the option to sort files by extension.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has text ""Files""
+- ACTION 2: Jade Green touched on a button that has text ""Android""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Sort by""",,True
+filemanager,"Open screen_2023-06-30_141247.png with gallery, Always open with gallery",,FAILURE,10,"- ACTION 1: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Search"" with the text ""screen_2023-06-30_141247.png""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 4: Jade Green touched on a button that has text ""Internal, 5.3 GB, free[...and more]""
+- ACTION 5: Jade Green touched on a button that has text ""Internal shared storage, 2.74 GB used of 8.00 GB""
+- ACTION 6: Jade Green touched on a button that has text ""Files, 0.00 GB""
+- ACTION 7: Jade Green touched on a button that has text ""Images""
+- ACTION 8: Jade Green scrolled down on a scrollable area that has text ""832.jpg, 8.00 kB, Jan 3[...and more]""
+- ACTION 9: Jade Green scrolled down on a scrollable area that has text ""906.jpg, 8.00 kB, Jan 3[...and more]""
+- ACTION 10: Jade Green scrolled down on a scrollable area that has text ""IMG_20251231_103106.jpg, 20.40 kB, Dec 31, 2025[...and more]""",,True
+filemanager,Sort the folders by size,"Jade Green successfully sorted the folders by size using the sorting options in the File Manager app. The task was completed by selecting the ""Size"" option from the sorting menu.",SUCCESS,8,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, GENERAL[...and more]""
+- ACTION 3: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 4: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 5: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 6: Jade Green touched on a button that has text ""Files""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Sort by""
+- ACTION 8: Jade Green touched on a button that has text ""Size""",,True
+filemanager,Sort the folers by last modified in descending order,"Jade Green successfully sorted the folders by the ""Last modified"" date in descending order on the Main page of the File Manager app.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has text ""Files""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Sort by""
+- ACTION 3: Jade Green touched on a button that has text ""Last modified""",,True
+filemanager,Temporarily show hidden files,"The task was successfully completed by navigating to the Settings page and confirming that the ""Show hidden items"" checkbox is checked, indicating that hidden files are temporarily shown.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+gallery,Change the display mode from grid to list in the Gallery app,The display mode in the Gallery app was successfully changed from grid to list view.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Change view type""
+- ACTION 3: Jade Green touched on a button that has text ""List""",,True
+gallery,"Create a folder and name it 'traveling_photos' in the 'DCIM' folder, the folder path is 'Internal/DCIM/'","Jade Green successfully navigated through the app's interface to create a new folder named ""traveling_photos"" within the ""DCIM"" directory.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has text ""DCIM, 22""
+- ACTION 2: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 3: Jade Green touched on a button that has text ""Create new folder""
+- ACTION 4: Jade Green filled a focused textfield that has text ""Title"" with the text ""traveling_photos""",,True
+gallery,Display five images per row in the Gallery app,"The task to display five images per row in the Gallery app was successfully completed by selecting the ""5 columns"" option from the ""Column count"" menu.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Column count""",,True
+gallery,Do not display GIF images in the Gallery app,Jade Green successfully disabled the display of GIF images in the Gallery app by using the filter media option on the Media page.,SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Filter media""
+- ACTION 3: Jade Green touched on a checked checkbox that has text ""GIFs""
+- ACTION 4: Jade Green touched on a button that has text ""OK""",,True
+gallery,Open DCIM folder in gallery app,"The task was successfully completed, with the DCIM folder being opened to display its contents within the gallery app.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Switch to folder view""
+- ACTION 2: Jade Green touched on a button that has text ""DCIM, 22""",,True
+gallery,Restore the video to its previous playback position the next time it is opened,The task to restore video playback position was not completed. Jade Green navigated through media items but did not engage with video-specific functionality to achieve the task goal.,FAILURE,11,"- ACTION 1: Jade Green touched on a button that has text ""DCIM, 22""
+- ACTION 2: Jade Green touched on a button that has resource_id ""com.simplemobiletools.gallery.pro:id/media_item_holder""
+- ACTION 3: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 4: Jade Green touched on a button that has resource_id ""com.simplemobiletools.gallery.pro:id/media_item_holder""
+- ACTION 5: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 6: Jade Green touched on a button that has resource_id ""com.simplemobiletools.gallery.pro:id/media_item_holder""
+- ACTION 7: Jade Green scrolled right on a scrollable area that has resource_id ""com.simplemobiletools.gallery.pro:id/view_pager""
+- ACTION 8: Jade Green scrolled right on a scrollable area that has resource_id ""com.simplemobiletools.gallery.pro:id/view_pager""
+- ACTION 9: Jade Green scrolled right on a scrollable area that has resource_id ""com.simplemobiletools.gallery.pro:id/view_pager""
+- ACTION 10: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 11: Jade Green touched on a button that has content_desc ""More options""",,True
+gallery,Search for the DCIM folder in gallery app and open it,"Jade Green successfully navigated to the DCIM folder and opened it, displaying the individual media items within the folder.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""DCIM, 22""",,True
+gallery,Show all contents in all folders within the gallery app,"The task of showing all contents in all folders within the gallery app was successfully executed by transitioning from a folder-based view to a media-based view, displaying individual media items.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Show all folders content""",,True
+gallery,Sort folders in the Gallery app by name in descending order,Jade Green successfully sorted the folders by name in descending order. The task was completed without excessive steps.,SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""Switch to folder view""
+- ACTION 2: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 3: Jade Green touched on a button that has text ""Sort by""
+- ACTION 4: Jade Green touched on a button that has text ""Name""",,True
+musicplayer,"Change the mode to ""Hip Hop""","The task to change the mode to ""Hip Hop"" was not completed as no action was taken to select the ""Hip Hop"" preset in the Equalizer settings.",FAILURE,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 4: Jade Green touched on a button that has content_desc ""Equalizer""",,True
+musicplayer,Change the theme of the Music player app to light and save it,"Jade Green successfully navigated to the Customization page, where options to change the theme to light were available. However, the task of changing the theme to light and saving it was not completed.",FAILURE,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green touched on a button that has text ""Customize colors""",,True
+musicplayer,Check the 'Recordings' in the Folders,"Jade Green successfully navigated to the 'Folders' view and located the 'Recordings' folder, which contains 1 track.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Folders""",,True
+musicplayer,Play 'test1' in recordings and set the loop mode to 'loop the current song',"The task was partially completed as the song 'test1' was successfully played, but the loop mode was not set to 'loop the current song'.",FAILURE,1,"- ACTION 1: Jade Green touched on a button that has text ""test1, <unknown> • Recordings, 00:02""",,True
+musicplayer,"Play the song ""test1"" in the tracks","The task was successfully completed as the song ""test1"" was played from the tracks by transitioning to the Track page and accessing playback controls.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""test1, <unknown> • Recordings, 00:02""",,True
+musicplayer,"Search for the song ""test1"" and play it","Jade Green successfully searched for and initiated playback of the song ""test1"". The track view was displayed with playback controls.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""test1, <unknown> • Recordings, 00:02""",,True
+musicplayer,Set the sleep timer for five minutes,The task of setting the sleep timer for five minutes was successfully completed by selecting the appropriate option from the expanded menu.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Sleep timer""",,True
+musicplayer,Set the song to gapless playback,"Jade Green successfully navigated to the Settings page and verified that the ""Gapless playback"" option is enabled.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+musicplayer,Sort by year in descending order,"The task to sort tracks by year in descending order was not completed successfully, as the sorting was incorrectly set to ""Date added"" instead of ""Year,"" and the task was not finalized with the correct criteria.",FAILURE,7,"- ACTION 1: Jade Green touched on a button that has content_desc ""Sort by""
+- ACTION 2: Jade Green touched on a button that has text ""Date added""
+- ACTION 3: Jade Green touched on a button that has text ""Cancel""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Sort by""
+- ACTION 5: Jade Green touched on a button that has text ""Date added""
+- ACTION 6: Jade Green touched on a button that has text ""OK""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Sort by""",,True
+notes,Adjust the fontsize of the Notes app to 125%,The task to adjust the font size to 125% was successfully completed by navigating to the Settings page and confirming the font size setting.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""",,True
+notes,Change the alignment to center,"The task of changing the alignment to center was successfully completed, as the alignment options were accessed and the ""Center"" option was selected.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green touched on a button that has resource_id ""com.simplemobiletools.notes.pro:id/settings_gravity_holder""
+- ACTION 4: Jade Green touched on a button that has text ""Center""",,True
+notes,Create a checklist named 'test' and sort the items by creating date,The task of creating a checklist named 'test' and sorting the items by creation date was completed successfully.,SUCCESS,7,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create a new note""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Label"" with the text ""test""
+- ACTION 3: Jade Green touched on a button that has text ""Checklist""
+- ACTION 4: Jade Green touched on a button that has text ""OK""
+- ACTION 5: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 6: Jade Green touched on a button that has text ""Sort by""
+- ACTION 7: Jade Green touched on a button that has text ""Date created""",,True
+notes,Create a checklist note called 'NewCheckList',Jade Green successfully created a checklist note called 'NewCheckList' by selecting the appropriate options and entering the desired label.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create a new note""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Label"" with the text ""NewCheckList""
+- ACTION 3: Jade Green touched on a button that has text ""Checklist""",,True
+notes,Create a new note called 'test' and type '123456',The task was successfully completed with the creation of a new note labeled 'test' and containing the text '123456'.,SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create a new note""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Label"" with the text ""test""
+- ACTION 3: Jade Green filled a focused textfield that has text ""test"" with the text ""123456""",,True
+notes,"Create a text note called 'test', type '12345678', and search for '234'","Jade Green successfully created a note titled ""test"" with the content ""12345678"" and activated the search feature on the main page.",SUCCESS,5,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create a new note""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Label"" with the text ""test""
+- ACTION 3: Jade Green filled a focused textfield that has text ""test"" with the text ""12345678""
+- ACTION 4: Jade Green touched on a button that has text ""OK""
+- ACTION 5: Jade Green touched on a button that has content_desc ""Search""",,True
+notes,Create a text note named 'NewTextNote',"The task to create a text note named 'NewTextNote' was executed successfully, with the note label being appropriately set in the note creation interface.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Create a new note""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Label"" with the text ""NewTextNote""",,True
+notes,Delete the note 'Diary',"The task of deleting the note 'Diary' was not completed due to excessive and unfocused actions, leading to task abandonment.",FAILURE,11,"- ACTION 1: Jade Green long touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 3: Jade Green filled a focused textfield that has text ""Search"" with the text ""Diary""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Close""
+- ACTION 5: Jade Green scrolled down on a scrollable area that has text ""12345678, General note, Insert text here""
+- ACTION 6: Jade Green scrolled down on a scrollable area that has text ""12345678, General note, Insert text here""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 8: Jade Green filled a focused textfield that has text ""Search"" with the text ""Diary""
+- ACTION 9: Jade Green touched on a button that has content_desc ""Next""
+- ACTION 10: Jade Green touched on a button that has content_desc ""Open note""
+- ACTION 11: Jade Green touched on a button that has text ""Cancel""",,True
+notes,Disable autosave notes,"Jade Green successfully disabled the autosave notes feature by unchecking the ""Autosave notes"" checkbox in the Settings page.",SUCCESS,4,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""
+- ACTION 4: Jade Green touched on a checked checkbox that has text ""Autosave notes""",,True
+notes,"Export note 'Diary' as file diary.txt, only export the current file content","The task of exporting the note 'Diary' as a file named 'diary.txt' was completed successfully, with the current file content being exported as intended.",SUCCESS,8,"- ACTION 1: Jade Green touched on a button that has content_desc ""Open note""
+- ACTION 2: Jade Green touched on a button that has text ""test""
+- ACTION 3: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 4: Jade Green touched on a button that has text ""Export as file""
+- ACTION 5: Jade Green filled a textfield that has text ""test.txt"" with the text ""diary.txt""
+- ACTION 6: Jade Green touched on a button that has text ""SAVE""
+- ACTION 7: Jade Green touched on a button that has text ""Only export the current file content
+(changing the[...]""",,True
+notes,Print 'Diary' as diary.pdf,"The task to print 'Diary' as diary.pdf was successfully completed, resulting in the creation and saving of a PDF file named ""diary.pdf"".",SUCCESS,5,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Print""
+- ACTION 3: Jade Green touched on a button that has content_desc ""Save to PDF""
+- ACTION 4: Jade Green filled a textfield that has text ""test"" with the text ""diary.pdf""
+- ACTION 5: Jade Green touched on a button that has text ""SAVE""",,True
+notes,Rename the note 'diary' to 'events',"The note titled ""diary"" was successfully renamed to ""events"" after selecting the ""Rename note"" option from the ""More options"" menu and entering the new name in the text field.",SUCCESS,3,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Rename note""
+- ACTION 3: Jade Green filled a focused textfield that has text ""12345678"" with the text ""events""",,True
+notes,Set app theme to light and save it,The task to set the app theme to light and save it was successfully completed by navigating through the settings and customization options.,SUCCESS,8,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green touched on a button that has text ""Settings""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, Customize widget colors[...and more]""
+- ACTION 4: Jade Green scrolled up on a scrollable area that has text ""STARTUP, Place cursor to the end of note, Show keyboard on startup[...and more]""
+- ACTION 5: Jade Green touched on a button that has text ""Customize colors""
+- ACTION 6: Jade Green touched on a button that has text ""Theme, Dark""
+- ACTION 7: Jade Green touched on a button that has text ""OK""
+- ACTION 8: Jade Green touched on a button that has text ""Light""",,True
+notes,Show the nunber of words in the Notes app,"The task of showing the word count in the Notes app was successfully accomplished by enabling the ""Show word count"" option in the Settings page.",SUCCESS,5,"- ACTION 1: Jade Green touched on a button that has content_desc ""Open note""
+- ACTION 2: Jade Green touched on a button that has text ""12345678""
+- ACTION 3: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 4: Jade Green touched on a button that has text ""Settings""
+- ACTION 5: Jade Green touched on a checkbox that has text ""Show word count""",,True
+smsmessenger,Change the name of the chat with Alice to 'team_discussion',The task of changing the name of the chat with Alice to 'team_discussion' was successfully completed.,SUCCESS,5,"- ACTION 1: Jade Green touched on a button that has text ""Alice, Draft, Hi Alice, I hope you're doing well! I just wanted [...][...and more]""
+- ACTION 2: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 3: Jade Green touched on a button that has text ""Conversation details""
+- ACTION 4: Jade Green touched on a button that has text ""Alice""
+- ACTION 5: Jade Green filled a focused textfield that has text ""Conversation name"" with the text ""team_discussion""",,True
+smsmessenger,Delete and Bob's message records,"The task to delete Bob's message records was completed successfully, as no items were found after searching for ""Bob"" in the conversations.",SUCCESS,5,"- ACTION 1: Jade Green long touched on a button that has text ""Stephen Bob, Goodmorning, 11.01""
+- ACTION 2: Jade Green touched on a button that has content_desc ""Delete""
+- ACTION 3: Jade Green touched on a button that has text ""Yes""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 5: Jade Green filled a focused textfield that has text ""Search"" with the text ""Bob""",,True
+smsmessenger,Enable delivery reports,"Jade Green successfully navigated to the Settings page and verified that the ""Enable delivery reports"" checkbox was already checked, indicating that delivery reports are enabled.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, GENERAL[...and more]""",,True
+smsmessenger,Export all messages to 'Messages_2023_07_01_11_04_43.json',"The task to export all messages to 'Messages_2023_07_01_11_04_43.json' was not accomplished. Instead, Jade Green navigated between the main and archived conversations screens without performing any export action.",FAILURE,11,"- ACTION 1: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 2: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 3: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 5: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 6: Jade Green touched on a button that has text ""Show archived conversations""
+- ACTION 7: Jade Green touched on a button that has content_desc ""Back""
+- ACTION 8: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 9: Jade Green pressed ""BACK"" button to navigate back
+- ACTION 10: Jade Green touched on a button that has content_desc ""More options""
+- ACTION 11: Jade Green touched on a button that has text ""Show archived conversations""",,True
+smsmessenger,Find messages with Alice,"Jade Green successfully accessed the search function on the Main page to find messages with Alice, revealing relevant content featuring Alice's name and messages.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Search""",,True
+smsmessenger,Mark the chat with Bob as Unread,The attempt to mark the chat with Bob as unread was unsuccessful due to an inability to locate the conversation with Bob in the app's interface.,FAILURE,11,"- ACTION 1: Jade Green scrolled down on a scrollable area that has text ""Search, 1234567890, I-love-you[...and more]""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""
+- ACTION 4: Jade Green scrolled down on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""
+- ACTION 5: Jade Green scrolled down on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""
+- ACTION 6: Jade Green scrolled down on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""
+- ACTION 7: Jade Green scrolled up on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""
+- ACTION 8: Jade Green touched on a textfield that has text ""Search""
+- ACTION 9: Jade Green filled a focused textfield that has text ""Search"" with the text ""Bob""
+- ACTION 10: Jade Green scrolled down on a scrollable area that has text ""Bob, 1234567890, I-love-you[...and more]""
+- ACTION 11: Jade Green scrolled down on a scrollable area that has text ""1234567890, I-love-you, 11.01[...and more]""",,True
+smsmessenger,Remove accents and diacritics at sending messages,The task to remove accents and diacritics when sending messages was successfully completed by navigating to the appropriate setting and ensuring the checkbox was checked.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, GENERAL[...and more]""",,True
+smsmessenger,"Send a text message ""Morning"" to Alice","The task to send a text message ""Morning"" to Alice was successfully completed, as indicated by the presence of the button with text ""Morning"" on the Thread page.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""Alice, Hi Alice, I hope you're doing well! I just wanted [...], 04.01""",,True
+smsmessenger,Send long messages as MMS,"The task of sending a long message as MMS was initiated, but the process was not completed as the message was not sent.",FAILURE,6,"- ACTION 1: Jade Green touched on a button that has text ""Alice, Hi Alice, I hope you're doing well! I just wanted [...], 04.01""
+- ACTION 2: Jade Green touched on a textfield that has text ""Type a message…""
+- ACTION 3: Jade Green filled a focused textfield that has text ""Type a message…"" with the text ""Hi Alice, I hope you're doing well! I just wanted to update you on everything that's been happening lately. There's so much to tell you, and I can't wait to hear your thoughts on it all. Let's catch up soon!""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Attachment""
+- ACTION 5: Jade Green touched on a button that has text ""Choose photo""
+- ACTION 6: Jade Green pressed ""BACK"" button to navigate back",,True
+smsmessenger,Send message by pressing Enter,"Jade Green successfully navigated to the Settings page and found the option to send messages by pressing Enter, which was already enabled.",SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""COLOR CUSTOMIZATION, Customize colors, GENERAL[...and more]""",,True
+smsmessenger,Show a character counter at writing messages,The task to show a character counter at writing messages was accomplished by navigating to the Settings page and confirming the checkbox for this feature is checked.,SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+smsmessenger,Switch custom colors to light and save it,Jade Green successfully navigated to the Customization page to switch the app's custom colors to a light theme.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Customize colors""",,True
+smsmessenger,View messages with Bob,"Jade Green attempted to view messages with Bob by searching for ""Bob"" but found no results, indicating there are no messages with Bob.",FAILURE,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 2: Jade Green filled a focused textfield that has text ""Search"" with the text ""Bob""",,True
+voicerecorder,Change the theme color to white and save it,"The task to change the theme color to white and save it was not completed, as there was no action taken to select or save the white theme.",FAILURE,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""
+- ACTION 2: Jade Green touched on a button that has text ""Customize colors""",,True
+voicerecorder,Hide the recording notification,"Jade Green navigated to the Settings page but did not complete any actions to hide the recording notification, though the checkbox indicates it might already be set.",FAILURE,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+voicerecorder,Open 'frequently asked questions',Jade Green successfully navigated to the 'Frequently Asked Questions' page from the Main screen through the About page.,SUCCESS,2,"- ACTION 1: Jade Green touched on a button that has content_desc ""About""
+- ACTION 2: Jade Green touched on a button that has text ""Frequently asked questions""",,True
+voicerecorder,Search for 'test1' and click on the 'test1.m4a',"The task was successfully completed, resulting in the display of a music player interface for the file ""test1.m4a"".",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has text ""test1.m4a, 00:02, 04.01.2026, 10:30 AM[...and more]""",,True
+voicerecorder,Set audio source to microphone,"The task of setting the audio source to the microphone was successfully completed as the current settings already show ""Microphone"" as the audio source.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+voicerecorder,Set bitrate to 96 kbps,"The task of setting the bitrate to 96 kbps was successfully accomplished by navigating to the Settings page, where the current bitrate is displayed as 96 kbps.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+voicerecorder,Set extension to mp3,The task to set the extension to mp3 was successfully completed by navigating to the Settings page.,SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+voicerecorder,Start recording automatically after launching the app,"Jade Green navigated to the Settings page and identified the option to start recording automatically after launching the app, which was already enabled.",SUCCESS,1,"- ACTION 1: Jade Green touched on a button that has content_desc ""Settings""",,True
+voicerecorder,Use player to play 'test2.m4a',"The task to play 'test2.m4a' was unsuccessful as the search for the file returned ""No items found.""",FAILURE,5,"- ACTION 1: Jade Green scrolled down on a scrollable area that has text ""test1.m4a, 00:02, 04.01.2026, 10:30 AM[...and more]""
+- ACTION 2: Jade Green scrolled down on a scrollable area that has text ""test1.m4a, 00:02, 04.01.2026, 10:30 AM[...and more]""
+- ACTION 3: Jade Green scrolled down on a scrollable area that has text ""test1.m4a, 00:02, 04.01.2026, 10:30 AM[...and more]""
+- ACTION 4: Jade Green touched on a button that has content_desc ""Search""
+- ACTION 5: Jade Green filled a focused textfield that has text ""Search"" with the text ""test2.m4a""",,True

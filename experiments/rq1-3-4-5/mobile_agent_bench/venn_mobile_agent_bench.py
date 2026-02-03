@@ -10,7 +10,7 @@ summary_dir = "mobile_agent_bench/summary"
 # Load summary evaluation files
 appagent_summary = pd.read_csv(f"{summary_dir}/appagent_evals_mobile_agent_bench.csv")
 autodroid_summary = pd.read_csv(f"{summary_dir}/autodroid_evals_mobile_agent_bench.csv")
-droidagent_summary = pd.read_csv(f"{summary_dir}/droidagent_evals_mobile_agent_bench.csv")
+androidgen_summary = pd.read_csv(f"{summary_dir}/androidgen_evals_mobile_agent_bench.csv")
 testflow_summary = pd.read_csv(f"{summary_dir}/testflow_evals_mobile_agent_bench.csv")
 
 # Create task identifiers (app_task_name format)
@@ -20,7 +20,7 @@ def create_task_id(row):
 # Get completed tasks for each method using task_completed column
 appagent_successful = set()
 autodroid_successful = set()
-droidagent_successful = set()
+androidgen_successful = set()
 testflow_successful = set()
 
 # For each method, check which tasks have task_completed=True
@@ -41,13 +41,13 @@ for _, row in autodroid_summary.iterrows():
             task_id = f"{app_name}_{task_name}"
             autodroid_successful.add(task_id)
 
-for _, row in droidagent_summary.iterrows():
+for _, row in androidgen_summary.iterrows():
     if row['task_completed'] == True:
         task_parts = row['task_name'].split('_', 1)
         if len(task_parts) == 2:
             app_name, task_name = task_parts
             task_id = f"{app_name}_{task_name}"
-            droidagent_successful.add(task_id)
+            androidgen_successful.add(task_id)
 
 for _, row in testflow_summary.iterrows():
     if row['task_completed'] == True:
@@ -62,7 +62,7 @@ sets = {
     'AppAgent': appagent_successful,
     'AutoDroid': autodroid_successful,
     'TestFlow': testflow_successful,
-    'DroidAgent': droidagent_successful,
+    'AndroidGen': androidgen_successful,
 }
 
 # Add counts to set names
@@ -81,12 +81,12 @@ print(f"Total unique tasks across all methods: {len(set().union(*sets.values()))
 # Debug: Check total tasks and completion rates
 print(f"AppAgent total tasks: {len(appagent_summary)}, completed (task_completed=True): {len(appagent_successful)}")
 print(f"AutoDroid total tasks: {len(autodroid_summary)}, completed (task_completed=True): {len(autodroid_successful)}")
-print(f"DroidAgent total tasks: {len(droidagent_summary)}, completed (task_completed=True): {len(droidagent_successful)}")
+print(f"androidgen total tasks: {len(androidgen_summary)}, completed (task_completed=True): {len(androidgen_successful)}")
 print(f"TestFlow total tasks: {len(testflow_summary)}, completed (task_completed=True): {len(testflow_successful)}")
 
 # Check for unique task names across all datasets
 all_tasks = set()
-for df in [appagent_summary, autodroid_summary, droidagent_summary, testflow_summary]:
+for df in [appagent_summary, autodroid_summary, androidgen_summary, testflow_summary]:
     all_tasks.update(df['task_name'].apply(lambda x: x.split('_', 1)[0] + '_' + x.split('_', 1)[1] if '_' in x else x))
 print(f"Total unique task identifiers across all datasets: {len(all_tasks)}")
 print()

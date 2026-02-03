@@ -6,8 +6,8 @@ import pandas as pd
 
 # Configuration
 GT_FILE = "benchmark_report_gt.csv"
-CANDIDATE_FILE = "benchmark_report_guardian.csv"
-METHOD_NAME = "guardian"
+CANDIDATE_FILE = "benchmark_report_androidgen.csv"
+METHOD_NAME = "androidgen"
 EVAL_DIR = os.path.join("evals", f"evals-{METHOD_NAME}")
 
 
@@ -245,9 +245,9 @@ class EvaluationApp:
         if self.candidate_entries:
             self.candidate_entries[0].focus()
 
-        # End correctly input row
+        # Task completed input row (same as DroidTask's "Task completed?")
         end_row = self.body_start_row + len(gt_actions) + 1
-        end_label = tk.Label(self.frame, text="End correctly (t/f):", font=("Arial", 12), anchor="w")
+        end_label = tk.Label(self.frame, text="Task completed? (t/f):", font=("Arial", 12), anchor="w")
         end_label.grid(row=end_row, column=1, padx=10, pady=8, sticky="e")
         self.end_entry = tk.Entry(self.frame, width=5)
         self.end_entry.grid(row=end_row, column=2, padx=10, pady=8, sticky="w")
@@ -260,17 +260,35 @@ class EvaluationApp:
         self.end_entry.bind("<Return>", lambda e: self.show_next())
 
     def _focus_next_entry(self, event=None):
+        # Check if we're on the end_entry - if so, do nothing (already at the end)
+        if hasattr(self, 'end_entry') and event.widget == self.end_entry:
+            return "break"
+        
         try:
             idx = self.candidate_entries.index(event.widget)
         except Exception:
             idx = -1
-        target = min(len(self.candidate_entries) - 1, idx + 1)
-        if target >= 0 and self.candidate_entries:
-            self.candidate_entries[target].focus()
-            self.candidate_entries[target].selection_range(0, tk.END)
+        
+        # If at the last candidate entry, move to end_entry
+        if idx == len(self.candidate_entries) - 1:
+            if hasattr(self, 'end_entry'):
+                self.end_entry.focus()
+                self.end_entry.selection_range(0, tk.END)
+        else:
+            target = min(len(self.candidate_entries) - 1, idx + 1)
+            if target >= 0 and self.candidate_entries:
+                self.candidate_entries[target].focus()
+                self.candidate_entries[target].selection_range(0, tk.END)
         return "break"
 
     def _focus_prev_entry(self, event=None):
+        # Check if we're on the end_entry - if so, go to last candidate entry
+        if hasattr(self, 'end_entry') and event.widget == self.end_entry:
+            if self.candidate_entries:
+                self.candidate_entries[-1].focus()
+                self.candidate_entries[-1].selection_range(0, tk.END)
+            return "break"
+        
         try:
             idx = self.candidate_entries.index(event.widget)
         except Exception:
