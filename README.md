@@ -104,14 +104,13 @@ Please note that in our evaluation, we use the ground truth for reference only. 
 ### TestFLow
 
 - **Full Model:** [Download](https://drive.google.com/file/d/1fizbQCh_b5woRXEeBEwyGmgrqfQoZJaz/view)
-- **Memory Ablation:** [Download](https://drive.google.com/file/d/1NrXmXDjKfBk3BBgPhv2FrqhAFYnJBoBK/view?usp=drive_link)
-- **Vision Ablation:** [Download](https://drive.google.com/file/d/1Ew-M3fuQdk9AVH6B78dhJk1r4TtSa04b/view)
 
 ### Baselines
 
 - **Guardian:** [Download](https://drive.google.com/file/d/1hb8cfiDvALWW5rssuHyhdcbMM4BMryu_/view?usp=drive_link)
 - **Droidagent:** [Download](https://drive.google.com/file/d/1YQn70w3vl6NYQQxAfD24xUdjFv-s24xx/view?usp=drive_link)
 - **AppAgent:** [Download](https://drive.google.com/file/d/1vTamXHFf70FelK2bAk6TBCjots2m22ZX/view)
+- **AndroidGen:** [Download](https://drive.google.com/file/d/1JmQlzZYdvwAVZIAxTNGG1FRXxgDhWEHm/view?usp=sharing)
 - **Autodroid:** We reused their replication package, available at [GitHub](https://github.com/autodroid-sys/artifacts/tree/main).
 
 ## Acknowledgments
